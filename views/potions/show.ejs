@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potion</title>
 </head>
+
 <body>
-    <h1>Potion Name</h1>
-    <p>Potion information</p>
+    <div>
+        <h1>Potion Name: <%= potion.potionName %>
+        </h1>
+
+        <h2>Potion information:</h2>
+        <p>
+            <%= potion.attributes %>
+        </p>
+    </div>
+
+    <div>
+        <form action="/potions/<%= potion.id %>?_method=DELETE" method="POST">
+            <button type="submit">Drink This Potion!</button>
+        </form>
+        <a href="/potions">Back to Potion Bag</a>
+
+    </div>
 </body>
+
 </html>
