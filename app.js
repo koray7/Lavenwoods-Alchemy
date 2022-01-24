@@ -69,8 +69,7 @@ app.get('/potions/:id', (req, res) => {
     })
 })
 
-// create route (POST method)
-// app.post('')
+
 
 
 
