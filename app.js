@@ -11,7 +11,8 @@ const PORT = 3000
 
 //New
 app.get('/potions/new', (req, res) => {
-    res.send('New Potion Route')
+    // res.send('New Potion Route')
+    res.render('new.ejs')
 })
 
 //index
