@@ -3,16 +3,27 @@
 const express = require("express")
 const app = express()
 const PORT = 3000
+const methodOverride = require('method-override')
+
+//MONGOOSE
+const mongoose = require('mongoose')
+const URI = "mongodb://127.0.0.1:27017/potions"
+mongoose.connect(URI, () => console.log(`Mongoose connected at ${URI}`))
+
+
+
 
 //MIDDLEWARE
-
+app.use(methodOverride('_method'))
+app.use(express.urlencoded({extended: false}))
 
 //ROUTING
 
 //New
 app.get('/potions/new', (req, res) => {
     // res.send('New Potion Route')
-    res.render('new.ejs')
+    // res.render('new.ejs')
+    res.render('potions/new.ejs')
 })
 
 //index
