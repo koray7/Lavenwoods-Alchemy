@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended: false}))
 
 //New
 app.get('/potions/new', (req, res) => {
-    res.send('New Potion Route')
+    res.render('potions/new.ejs')
 })
 
 //index

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const potionSchema = new mongoose.Schema({
-    name: {
+    potionName: {
         type: String, required: true, default: "Unidentified Brew"
     },
     attributes: [String]

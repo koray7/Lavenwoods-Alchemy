@@ -8,10 +8,11 @@
 </head>
 <body>
     <h1>New Potion</h1>
-    <form action="">
+    <form action="/potions" method="POST">
         <h1>Potion Name</h1>
-        <input type="text" placeholder="Potion Name Here">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="text" name="potionName" placeholder="Potion Name Here">
+        <textarea name="attributes" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Brew Your Potion!">
     </form>
 </body>
 </html>
