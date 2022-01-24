@@ -33,9 +33,22 @@ app.get('/potions', (req, res) => {
 
 //New
 app.get('/potions/new', (req, res) => {
+    // res.send('New Potion Route')
+    // res.render('new.ejs')
     res.render('potions/new.ejs')
 })
 
+//index
+app.get('/potions/index', (req, res) => {
+    // res.send("Potions Main Page")
+    res.render('potions/index.ejs')
+})
+
+//main
+app.get('/potions', (req, res) => {
+    // res.send("Potions Main Page")
+    res.render('potions/main.ejs')
+})
 
 
 //show
@@ -54,6 +67,9 @@ app.get('/potions/:id/edit', (req, res) => {
     res.send(`Edit route for ${req.params.id}`)
 })
 
+app.get('/', (req, res) => {
+    res.render('potions/main.ejs')
+})
 //create
 app.post('/potions', (req, res) => {
     Potion.create(req.body, (err, newPotion) => {
@@ -83,8 +99,15 @@ app.put('/potions/:id', (req, res) => {
     res.send(`Potion update: ${req.params.id}`)
 })
 
+//mages
+app.get('/mages', (req, res) => {
+    res.render('potions/mages.ejs')
+})
 
-
+//create
+app.post('/potions/index', (req, res) => {
+    res.send(req.body)
+})
 
 
 
