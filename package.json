@@ -19,12 +19,8 @@
   "homepage": "https://github.com/koray7/Lavenwoods-Alchemy#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-<<<<<<< HEAD
-    "express": "^4.17.2"
-=======
     "express": "^4.17.2",
     "method-override": "^3.0.0",
     "mongoose": "^6.1.7"
->>>>>>> d4aefeed1787a62982ef171b8201382cb3cbcaf6
   }
 }

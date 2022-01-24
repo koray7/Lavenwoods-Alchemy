@@ -3,7 +3,7 @@
 const express = require("express")
 const app = express()
 const PORT = 3000
-const methodOverride = require('method-override')
+const methodOverride = require("method-override")
 
 //MONGOOSE
 const mongoose = require('mongoose')
@@ -27,8 +27,15 @@ app.get('/potions/new', (req, res) => {
 })
 
 //index
+app.get('/potions/index', (req, res) => {
+    // res.send("Potions Main Page")
+    res.render('potions/index.ejs')
+})
+
+//main
 app.get('/potions', (req, res) => {
-    res.send("Potions Main Page")
+    // res.send("Potions Main Page")
+    res.render('potions/main.ejs')
 })
 
 //show
@@ -53,8 +60,15 @@ app.put('/potions/:id', (req, res) => {
     res.send(`Potion update: ${req.params.id}`)
 })
 
+//mages
+app.get('/mages', (req, res) => {
+    res.render('potions/mages.ejs')
+})
 
-
+//create
+app.post('/potions/index', (req, res) => {
+    res.send(req.body)
+})
 
 
 
