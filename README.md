@@ -7,7 +7,7 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 
 ## Basic low-fidelity wireframes
 
-
+![20220124_101519](https://user-images.githubusercontent.com/95322104/150819360-daf3cc97-42ed-4b6f-8718-9dc54c964d52.jpg)
 
 
 
