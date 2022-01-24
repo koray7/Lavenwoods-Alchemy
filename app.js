@@ -1,16 +1,26 @@
+
+//DEPENDENCIES
 const express = require("express")
 const app = express()
 const PORT = 3000
 
-
-// route for create page - create potion 
-
-
-//show page to show 1 potion that was created 
+//MIDDLEWARE
 
 
+//ROUTING
 
-// start the server 
+
+
+
+
+
+
+
+
+
+
+
+//SERVER START
 app.listen(PORT, () => {
-    console.log(`server is started on port ${PORT}`)
+    console.log(`Listening on port ${PORT}`)
 })
