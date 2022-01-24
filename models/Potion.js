@@ -6,3 +6,6 @@ const potionSchema = new mongoose.Schema({
     },
     attributes: [String]
 }, {timestamps: true})
+
+const Potion = mongoose.model("Potion", potionSchema)
+module.exports = Potion
