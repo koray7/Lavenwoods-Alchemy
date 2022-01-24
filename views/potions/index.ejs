@@ -9,5 +9,18 @@
 <body>
     <h1>Potion Bag</h1>
     <p>All potions will be displayed here.</p>
+    <%if(potions.length) {%>
+    <% for (let i=0; i<potions.length; i++) { %>
+        <ul>
+        <li><a href="/potions/<%= potions[i].id %> "><%= potions[i].potionName %> </a></li>
+        </ul>
+   <% } %>
+   <% } else { %>
+    <em>Potion bag is empty.  Better talk to your favorite mage!</em>
+  <% } %>
+
+  <div>
+      <a href="/potions/new">Brew A New Potion!</a>
+  </div>
 </body>
 </html>

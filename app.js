@@ -4,6 +4,7 @@ const express = require("express")
 const app = express()
 const PORT = 3000
 const methodOverride = require('method-override')
+const Potion = require("./models/Potion")
 
 
 
@@ -26,20 +27,33 @@ app.use(express.urlencoded({extended: false}))
 
 //ROUTING
 
+//index
+app.get('/potions', (req, res) => {
+    Potion.find({}, (err, allPotions) => {
+        if (err) {
+            res.send(err)
+        } else {
+            res.render('potions/index.ejs', {potions: allPotions})
+        }
+    })
+})
+
 //New
 app.get('/potions/new', (req, res) => {
     res.render('potions/new.ejs')
 })
 
-//index
-app.get('/potions', (req, res) => {
-    res.send("Potions Main Page")
-})
+
 
 //show
 app.get('/potions/:id', (req, res) => {
-    const id = req.params.id
-    res.send('Potion Show Page')
+    Potion.findById(req.params.id, (err, foundPotion) => {
+        if(err) {
+            res.send(err)
+        } else {
+            res.render('potions/show.ejs', {potion: foundPotion})
+        }
+    })
 })
 
 // create route (POST method)
@@ -53,9 +67,27 @@ app.get('/potions/:id/edit', (req, res) => {
     res.send(`Edit route for ${req.params.id}`)
 })
 
+//create
+app.post('/potions', (req, res) => {
+    Potion.create(req.body, (err, newPotion) => {
+        if (err) {
+            res.send(err)
+        } else {
+            console.log(newPotion)
+            res.redirect('/potions')
+        }
+    })
+})
+
 //delete
 app.delete('/potions/:id', (req, res) => {
-    res.send(`Potions delete route for id ${req.params.id}`)
+    Potion.findByIdAndDelete(req.params.id, (err, response) => {
+        if (err) {
+            res.send(err)
+        } else {
+            res.redirect('/potions')
+        }
+    })
 })
 
 //update
