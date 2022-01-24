@@ -10,7 +10,7 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 ![20220124_101519](https://user-images.githubusercontent.com/95322104/150819360-daf3cc97-42ed-4b6f-8718-9dc54c964d52.jpg)
 
 
-
+![20220124_101553](https://user-images.githubusercontent.com/95322104/150820116-5a7d5186-eb85-4d5a-b425-325798373d4f.jpg)
 
 
 
