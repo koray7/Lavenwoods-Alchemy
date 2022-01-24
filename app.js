@@ -5,6 +5,13 @@ const app = express()
 const PORT = 3000
 const methodOverride = require('method-override')
 
+
+
+// EJS
+app.set('view engine', 'ejs')
+
+
+
 //MONGOOSE
 const mongoose = require('mongoose')
 const URI = "mongodb://127.0.0.1:27017/potions"
@@ -34,6 +41,12 @@ app.get('/potions/:id', (req, res) => {
     const id = req.params.id
     res.send('Potion Show Page')
 })
+
+// create route (POST method)
+// app.post('')
+
+
+
 
 //edit
 app.get('/potions/:id/edit', (req, res) => {
