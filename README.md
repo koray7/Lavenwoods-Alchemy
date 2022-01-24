@@ -13,8 +13,7 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 ![20220124_101553](https://user-images.githubusercontent.com/95322104/150820116-5a7d5186-eb85-4d5a-b425-325798373d4f.jpg)
 
 
-
-
+![A31BC3DE-14F5-463D-9061-45857229A7BB_1_105_c](https://user-images.githubusercontent.com/95322104/150820354-191d1557-60c9-450c-b09d-821e986a1615.jpeg)
 
 
 
@@ -25,9 +24,9 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 As a user, I want to enter Lavenwoods and find out what’s Lavenwoods is about!
 As a user, I want to see the shop available in Lavenwoods.
 As a user, I want to see what the shop has to offer.
-3.a. As a user, I want to see the categories of products
-3.b. As a user, I want to see the properties of products
-3.c. As a user, I want to be able to request a product
+  3.a. As a user, I want to see the categories of products
+  3.b. As a user, I want to see the properties of products
+  3.c. As a user, I want to be able to request a product
 4. As a user, I want to know my product request has been received
 5. As a user, I want to leave the shop with a product
 6. As a user, I want to be able to reenter the shop
