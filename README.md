@@ -91,7 +91,7 @@ Ingredient list on create page that intelligently creates potion effects based o
 
 ## RESTful routing chart for each database resource
 
-![Screen Shot 2022-01-24 at 10 19 16 AM](https://user-images.githubusercontent.com/95322104/150821788-527e20cb-8ad1-464a-a1b8-d736d753c181.png)
+
 
 
 
