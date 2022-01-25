@@ -1,27 +1,31 @@
 const express = require('express')
 const router = express.Router()
-const Mages = {
-    mageFlame: {
+const Mages = [
+    mageFlame = {
         name: "Mage O' Flame",
         element: "Fire",
         quote: "",
+        image: "https://i.ibb.co/64LzfMQ/Flame-Mage.png",
     },
-    mageBolt: {
+    mageBolt = {
         name: "Mage O' Bolt",
         element: "Lightning",
-        quote: ""
+        quote: "",
+        image: "http://127.0.0.1:8887/Bolt_Mage.png",
     },
-    mageFrost: {
+    mageFrost = {
         name: "Mage O' Frost",
         element: "Ice",
         quote: "",
+        image: "https://i.ibb.co/DVTHvCP/Frost-Mage.png",
     },
-    mageEnigma: {
+    mageEnigma = {
         name: "Mage O' Enigma",
         element: "Mystery",
         quote: "",
+        image: "https://i.ibb.co/zFsHZXn/Enigma-Mage.png",
     }
-}
+]
 
 //ROUTES
 
