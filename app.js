@@ -19,7 +19,7 @@ mongoose.connect(URI, () => console.log(`Mongoose connected at ${URI}`))
 //MIDDLEWARE
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: false}))
-
+app.use(express.static('public'))
 
 //Mages Controller
 app.use('/mages', magesController)
