@@ -1,4 +1,7 @@
-div {
+html {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
     
 }
