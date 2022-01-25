@@ -11,7 +11,7 @@ const Mages = [
         name: "Mage O' Bolt",
         element: "Lightning",
         quote: "",
-        image: "http://127.0.0.1:8887/Bolt_Mage.png",
+        image: "https://i.ibb.co/72TQd3j/Bolt-Mage.png",
     },
     mageFrost = {
         name: "Mage O' Frost",
