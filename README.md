@@ -7,14 +7,13 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 
 ## Basic low-fidelity wireframes
 
+![20220124_101519](https://user-images.githubusercontent.com/95322104/150819360-daf3cc97-42ed-4b6f-8718-9dc54c964d52.jpg)
 
 
+![20220124_101553](https://user-images.githubusercontent.com/95322104/150820116-5a7d5186-eb85-4d5a-b425-325798373d4f.jpg)
 
 
-
-
-
-
+![A31BC3DE-14F5-463D-9061-45857229A7BB_1_105_c](https://user-images.githubusercontent.com/95322104/150820354-191d1557-60c9-450c-b09d-821e986a1615.jpeg)
 
 
 
@@ -25,9 +24,9 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 As a user, I want to enter Lavenwoods and find out what’s Lavenwoods is about!
 As a user, I want to see the shop available in Lavenwoods.
 As a user, I want to see what the shop has to offer.
-3.a. As a user, I want to see the categories of products
-3.b. As a user, I want to see the properties of products
-3.c. As a user, I want to be able to request a product
+  3.a. As a user, I want to see the categories of products
+  3.b. As a user, I want to see the properties of products
+  3.c. As a user, I want to be able to request a product
 4. As a user, I want to know my product request has been received
 5. As a user, I want to leave the shop with a product
 6. As a user, I want to be able to reenter the shop
@@ -76,6 +75,7 @@ Ingredient list on create page that intelligently creates potion effects based o
 ## Database ERD diagrams
 
 
+![Screen Shot 2022-01-21 at 3 02 51 PM](https://user-images.githubusercontent.com/95322104/150820966-1bc46ed4-943b-4981-a690-503f631a09f6.png)
 
 
 
@@ -91,6 +91,7 @@ Ingredient list on create page that intelligently creates potion effects based o
 
 ## RESTful routing chart for each database resource
 
+![Screen Shot 2022-01-24 at 10 22 34 AM](https://user-images.githubusercontent.com/95322104/150822426-94e23d33-615e-4986-b2de-151aa9c08cde.png)
 
 
 
