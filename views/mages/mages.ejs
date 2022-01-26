@@ -39,18 +39,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ye' Mages!</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/mages.css" /> -->
 </head>
 
 <body>
 
     <% for (let i=0; i<mage.length; i++){ %>
-        <% console.log(mage[i]) %>
+        <% console.log('hellloooo', mage[i].image) %>
             <div>
                 <h2>
-                    <%= mage[i].name %>
+                    <%= mage[i].mageName %>
                 </h2>
-                <img src="<%= mage[i].image %>" alt="Enigma-Mage" border="0">
-                <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>">
+                <a href="urmom.com"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
+                <!-- <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>"> -->
+                <form action="/mages/<%= mage[i].id %>?_method=DELETE" method="POST">
+                    <button type="submit">Delete ye mage?</button>
+                </form>
             </div>
             <% } %>
 
