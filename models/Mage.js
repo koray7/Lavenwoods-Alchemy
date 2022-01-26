@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const potionSchema = new mongoose.Schema({
+const mageSchema = new mongoose.Schema({
     mageName: {
         type: String, required: true, default: "Unidentified Mage"
     },
@@ -9,5 +9,5 @@ const potionSchema = new mongoose.Schema({
     image: String
     }, {timestamps: true})
 
-const Potion = mongoose.model("Potion", potionSchema)
-module.exports = Potion
+const Mage = mongoose.model("Mage", mageSchema)
+module.exports = Mage
