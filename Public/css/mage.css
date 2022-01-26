@@ -1,4 +1,13 @@
+body{
+    background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
+}
 div {
     display: inline-flex;
-    
+    flex-direction: row;
+}
+
+input{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
