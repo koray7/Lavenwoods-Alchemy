@@ -1,0 +1,58 @@
+/* html {
+    background: url(../img/Alchamy.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    width: 100%;
+    align-items : center;
+    height: 100%; */
+    background-position: center center;
+
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: green;
+    overflow: hidden;
+
+   
+    background-image:url('https://i.ibb.co/LpyKRgT/Alchemy.jpg') ;
+}
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 540px;
+}
+input {
+  margin-top: 10px;
+  margin-left: 42%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 3px solid green;
+
+  
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+input:hover {
+  background-color: rgb(26, 26, 22);
+}

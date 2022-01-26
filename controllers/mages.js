@@ -31,7 +31,7 @@ const Mages = [
 
 //index
 router.get('/', (req, res) => {
-    res.render('mages/mages.ejs', {mage: Mages})
+    res.render('mages/mages.ejs', { mage: Mages })
     // Mage.find({}, (err, allMages) => {
     //     if (err){
     //         res.send(err)
@@ -44,10 +44,10 @@ router.get('/', (req, res) => {
 //show
 router.get('/:id', (req, res) => {
     Mage.findById(req.params.id, (err, foundMage) => {
-        if(err) {
+        if (err) {
             res.send(err)
         } else {
-            res.render('mages/show.ejs', {mage: foundMage})
+            res.render('mages/show.ejs', { mage: foundMage })
         }
     })
 })
