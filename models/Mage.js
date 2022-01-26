@@ -1,27 +1,13 @@
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
-// const Mages = {
-//     mageFlame: {
-//         name: "Mage O' Flame",
-//         element: "Fire",
-//         quote: "",
-//     },
-//     mageBolt: {
-//         name: "Mage O' Bolt",
-//         element: "Lightning",
-//         quote: ""
-//     },
-//     mageFrost: {
-//         name: "Mage O' Frost",
-//         element: "Ice",
-//         quote: "",
-//     },
-//     mageEnigma: {
-//         name: "Mage O' Enigma",
-//         element: "Mystery",
-//         quote: "",
-//     }
-// }
+const potionSchema = new mongoose.Schema({
+    mageName: {
+        type: String, required: true, default: "Unidentified Mage"
+    },
+    element: String,
+    quote: String,
+    image: String
+    }, {timestamps: true})
 
-// const Mage = mongoose.model("Mage", Mages)
-// module.exports = Mage
+const Potion = mongoose.model("Potion", potionSchema)
+module.exports = Potion
