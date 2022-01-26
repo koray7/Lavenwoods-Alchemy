@@ -52,7 +52,7 @@ router.get('/', (req, res) => {
 
 //show
 router.get('/:id', (req, res) => {
-    Mages.findById(req.params.id, (err, foundMage) => {
+    Mage.findById(req.params.id, (err, foundMage) => {
         if(err) {
             res.send(err)
             console.log("Am I working?")

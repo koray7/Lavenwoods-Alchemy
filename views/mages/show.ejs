@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ye Mage Show page</title>
+    <title>Ye 1 Mage</title>
 </head>
 <body>
-    <h1>Ye Mage Show Page!</h1>
+    <div>
+        <h1>Ye Mage Name: <%= mage.mageName %> </h1>
+
+        <h2>Ye Mage Element:</h2>
+        <p>
+            <%= mage.element %>
+        </p>
+        <h3>Ye Mage Quote:</h3>
+        <p>
+            <%= mage.quote %>
+        </p>
+        
+    </div>
+
+    <div>
+     
+        <a href="/mages">Back to Mages List</a>
+
+    </div>
+
+    
+
+
+
 </body>
 </html>

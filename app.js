@@ -5,6 +5,7 @@ const app = express()
 const PORT = 3000
 const methodOverride = require('method-override')
 const Potion = require("./models/Potion")
+const Mage = require("./models/Mage")
 const magesController = require('./controllers/mages')
 const potionsController = require('./controllers/potions')
 
