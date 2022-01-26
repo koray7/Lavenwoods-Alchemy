@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+<<<<<<< HEAD
 const Mages = [
     mageFlame = {
         _id: 1,
@@ -32,6 +33,8 @@ const Mages = [
 ]
 
 
+=======
+>>>>>>> main
 const mageSchema = new mongoose.Schema({
     mageName: {
         type: String, required: true, default: "Unidentified Mage"
@@ -42,4 +45,8 @@ const mageSchema = new mongoose.Schema({
     }, {timestamps: true})
 
 const Mage = mongoose.model("Mage", mageSchema)
+<<<<<<< HEAD
 module.exports = Mage, Mages
+=======
+module.exports = Mage
+>>>>>>> main
