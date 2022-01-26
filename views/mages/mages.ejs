@@ -1,22 +1,58 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="html/css" href="/Styles/mage.css">
     <title>Choose Ye' Mage</title>
 </head>
 <body>
+    <img src="https://i.ibb.co/S74YYqC/Lavenwoods-Sign.png" alt="Lavenwoods-Sign" border="0">
     <h1>CHOOSE YE' MAGE</h1>
     <form action="/potions/new" method="GET">
-        <div>MAGE O' FLAME</div>
-        <input type="submit" name="fire" value="FIRE">
-        <div>MAGE O' BOLT</div>
+     <div>  <h2>MAGE O' FLAME</h2>
+     <img src="https://i.ibb.co/64LzfMQ/Flame-Mage.png" alt="Flame-Mage" border="0">
+    <input type="submit" name="fire" value="FIRE">
+    </div>
+    <div>   <h2>MAGE O' BOLT</h2>
+        <img src="http://127.0.0.1:8887/Bolt_Mage.png">
         <input type="submit" name="lightning" value="LIGHTNING">
-        <div>MAGE O' FROST</div>
+    </div>
+     <div>  <h2>MAGE O' FROST</h2>
+        <img src="https://i.ibb.co/DVTHvCP/Frost-Mage.png" alt="Frost-Mage" border="0">
         <input type="submit" name="ice" value="ICE">
-        <div>MAGE O' ENIGMA</div>
-        <input type="submit" name="mystery" value="MYSTERY">
+    </div>
+        <div>   <h2>MAGE O' ENIGMA</h2>
+            <img src="https://i.ibb.co/zFsHZXn/Enigma-Mage.png" alt="Enigma-Mage" border="0">        
+            <input type="submit" name="mystery" value="MYSTERY">
+        </div>
     </form>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ye' Mages!</title>
+</head>
+
+<body>
+
+    <% for (let i=0; i<mage.length; i++){ %>
+        <% console.log(mage[i]) %>
+            <div>
+                <h2>
+                    <%= mage[i].name %>
+                </h2>
+                <img src="<%= mage[i].image %>" alt="Enigma-Mage" border="0">
+                <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>">
+            </div>
+            <% } %>
+
 </body>
+
 </html>
