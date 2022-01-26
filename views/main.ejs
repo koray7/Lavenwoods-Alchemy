@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet">
     <title>Lavenwoods Alchemy</title>
+    <script defer src="/Script/script.js"></script>
 </head>
 <body>
     <h1>WELCOME TO LAVENWOODS ALCHEMY</h1>
     <!-- <img src="images/Lavenwoods_Sign.png"> -->
-    <form action="/mages" method="GET">
+    <!-- <form action="/mages" method="GET">
       <input type="submit" value="SUMMON THE MAGES">
-    </form>
+    </form> -->
+
+    <div>
+      <input id="mage-submit" type="submit" value="SUMMON THE MAGES">
+    </div>
+
+    <div>
+      <form id="mage-create" action="/mages" method="POST">
+        <input type="text" name="mageName" value="Mage O' Flame">
+        <input type="text" name="element" value="Fire">
+        <input type="text" name="image" value="https://i.ibb.co/64LzfMQ/Flame-Mage.png">
+      </form>
+      <!-- <form class="mage-create" action="/mages" method="POST">
+        <input type="text" name="mageName" value="Mage O' Bolt">
+        <input type="text" name="element" value="Lightning">
+        <input type="text" name="image" value="https://i.ibb.co/72TQd3j/Bolt-Mage.png">
+      </form> -->
+    </div>
 </body>
 </html>
