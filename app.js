@@ -8,6 +8,7 @@ const Potion = require("./models/Potion")
 const magesController = require('./controllers/mages')
 const potionsController = require('./controllers/potions')
 
+
 //MONGOOSE
 const mongoose = require('mongoose')
 const URI = "mongodb://127.0.0.1:27017/potions"
@@ -20,7 +21,7 @@ app.use(express.static('public'))
 //MIDDLEWARE
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: false}))
-
+app.use(express.static('public'))
 
 //Mages Controller
 app.use('/mages', magesController)

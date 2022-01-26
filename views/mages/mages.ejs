@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,5 +29,31 @@
             <input type="submit" name="mystery" value="MYSTERY">
         </div>
     </form>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ye' Mages!</title>
+</head>
+
+<body>
+
+    <% for (let i=0; i<mage.length; i++){ %>
+        <% console.log(mage[i]) %>
+            <div>
+                <h2>
+                    <%= mage[i].name %>
+                </h2>
+                <img src="<%= mage[i].image %>" alt="Enigma-Mage" border="0">
+                <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>">
+            </div>
+            <% } %>
+
 </body>
- 
+
+</html>
