@@ -19,7 +19,7 @@ mongoose.connect(URI, () => console.log(`Mongoose connected at ${URI}`))
 
 //MIDDLEWARE
 app.use(methodOverride('_method'))
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(express.static('public'))
 
 //Mages Controller
@@ -35,14 +35,7 @@ app.get('/', (req, res) => {
 
 
 
-<<<<<<< HEAD
-
-app.listen(PORT, function () {
-    console.log("Server is Running on port", PORT);
-})
-=======
 //SERVER START
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
->>>>>>> 2336f88efeaa6732a3284816138dff1aa242f575
