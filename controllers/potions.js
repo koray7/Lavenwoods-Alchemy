@@ -26,13 +26,17 @@ router.get('/new', (req, res) => {
 
 //show
 router.get('/:id', (req, res) => {
-    Potion.findById(req.params.id, (err, foundPotion) => {
+    Potion.findById(req.params.id).populate('mage').exec(
+        (err, foundPotion) => {
         if(err) {
             res.send(err)
         } else {
+            // res.send(foundPotion)
             res.render('potions/show.ejs', {potion: foundPotion})
         }
     })
+    
+    
 })
 
 //edit

@@ -15,9 +15,10 @@
 
         <h2>Potion information:</h2>
         <p>
-            <%= potion.attributes %>
-            <%= potion.mage %> 
+            <%= potion.attributes %> 
         </p>
+        <p>Brewed by <%= potion.mage.mageName %></p>
+        <p>Element: <%= potion.mage.element %> </p>
     </div>
 
     <div>

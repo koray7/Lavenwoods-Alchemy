@@ -23,14 +23,17 @@
     <form action="/potions" method="POST">
         <h2>Potion Name:</h2>
         <input type="text" name="potionName" placeholder="Potion Name Here"></br></br>
-        <input type="text" name="mage" value="<%= mage._id %>">
         <h2>Potion Effects:</h2>
         <textarea name="attributes" id="" cols="30" rows="10"></textarea></br>
         <input type="submit" value="Brew Your Potion!">
         <legend>
             <label for="mage">
-                Mage that created this potion: <%= mage.mageName %> 
-                Element of this potion: <%= mage.element %> 
+                Mage that created this potion:
+                <select name="mage" id="mage">
+                    <option value="<%= mage._id %>"><%= mage.mageName %></option>
+                </select>
+                 
+                 
                 
             </label>
         </legend>
