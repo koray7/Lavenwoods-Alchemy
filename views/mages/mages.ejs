@@ -1,4 +1,41 @@
+<<<<<<< HEAD
+<!-- <!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mage.css">
+    <img src="images/Lavenwoods_Sign.png">
+    <title>Choose Ye' Mage</title>
+</head>
+
+<body>
+    <h1>CHOOSE YE' MAGE</h1>
+    <form action="/potions/new" method="GET">
+     <div>  <h2>MAGE O' FLAME</h2>
+     <img src="images/Flame_Mage.png" alt="Flame-Mage">
+    </div>
+    <input type="submit" name="fire" value="FIRE">
+   
+    <div>   <h2>MAGE O' BOLT</h2>
+        <img src="images/Bolt_Mage.png" alt="Bolt-Mage">      
+        <input type="submit" name="lightning" value="LIGHTNING">
+    </div>
+     <div>  <h2>MAGE O' FROST</h2>
+        <img src="images/Frost_Mage.png" alt="Frost-Mage">
+        <input type="submit" name="ice" value="ICE">
+    </div>
+        <div>   <h2>MAGE O' ENIGMA</h2>
+            <img src="images/Enigma_Mage.png" alt="Enigma-Mage">       
+            <input type="submit" name="mystery" value="MYSTERY">
+        </div>
+    </form>
+</body> -->
+=======
+
+>>>>>>> main
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,8 +44,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title class="title"> Ye' Mages!</title>
+    <link rel="stylesheet" type="text/css" href="css/mages.css" />
+=======
     <title>Ye' Mages!</title>
    
+>>>>>>> main
 </head>
 
 <body>
@@ -19,11 +61,17 @@
                 <h2>
                     <%= mage[i].mageName %>
                 </h2>
+<<<<<<< HEAD
+                <a href="/potions/new" target="_blank">
+                    <img src="<%= mage[i].image %>" alt="Enigma-Mage">
+                </a>
+=======
                 <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
                 <!-- <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>"> -->
                 <form action="/mages/<%= mage[i].id %>?_method=DELETE" method="POST">
                     <button type="submit">Delete ye mage?</button>
                 </form>
+>>>>>>> main
             </div>
             <% } %>
 
