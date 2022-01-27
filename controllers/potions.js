@@ -18,23 +18,8 @@ router.get('/', (req, res) => {
 
 //New
 router.get('/new', (req, res) => {
-    // res.send('New Potion Route')
-    // res.render('new.ejs')
     res.render('potions/new.ejs')
 })
-
-//index
-// router.get('/potions/index', (req, res) => {
-//     // res.send("Potions Main Page")
-//     res.render('potions/index.ejs')
-// })
-
-//main
-// router.get('/potions', (req, res) => {
-//     // res.send("Potions Main Page")
-//     res.render('potions/main.ejs')
-// })
-
 
 //show
 router.get('/:id', (req, res) => {
