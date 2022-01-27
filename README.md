@@ -75,7 +75,7 @@ Ingredient list on create page that intelligently creates potion effects based o
 ## Database ERD diagrams
 
 
-![Screen Shot 2022-01-21 at 3 02 51 PM](https://user-images.githubusercontent.com/95322104/150820966-1bc46ed4-943b-4981-a690-503f631a09f6.png)
+
 
 
 
