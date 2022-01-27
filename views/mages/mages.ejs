@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/mage.css" rel="stylesheet">
     <title>Ye' Mages!</title>
     <script defer src="/Script/script.js"></script>
 
@@ -14,14 +15,15 @@
 
     <% for (let i=0; i<mage.length; i++){ %>
         <% console.log('hellloooo', mage[i].image) %>
-            <div>
-                <h2>
-                    <%= mage[i].mageName %>
-                </h2>
-                <a id="mage<%= i %>" class="mage-clicker" href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
+            <div class="page2">
+                <div>
+                    <h2>
+                        <%= mage[i].mageName %>
+                    </h2>
+                    <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
+                </div>
+                <% } %>
             </div>
-            <% } %>
-
 </body>
 
 </html>
