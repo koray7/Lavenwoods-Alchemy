@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ye' Mages!</title>
-   
+
 </head>
 
 <body>
@@ -20,10 +18,6 @@
                     <%= mage[i].mageName %>
                 </h2>
                 <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
-                <!-- <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>"> -->
-                <form action="/mages/<%= mage[i].id %>?_method=DELETE" method="POST">
-                    <button type="submit">Delete ye mage?</button>
-                </form>
             </div>
             <% } %>
 

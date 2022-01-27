@@ -2,32 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Mage = require('../models/Mage')
 
-// const Mages = [
-//     mageFlame = {
-//         name: "Mage O' Flame",
-//         element: "Fire",
-//         quote: "",
-//         image: "https://i.ibb.co/64LzfMQ/Flame-Mage.png",
-//     },
-//     mageBolt = {
-//         name: "Mage O' Bolt",
-//         element: "Lightning",
-//         quote: "",
-//         image: "https://i.ibb.co/72TQd3j/Bolt-Mage.png",
-//     },
-//     mageFrost = {
-//         name: "Mage O' Frost",
-//         element: "Ice",
-//         quote: "",
-//         image: "https://i.ibb.co/DVTHvCP/Frost-Mage.png",
-//     },
-//     mageEnigma = {
-//         name: "Mage O' Enigma",
-//         element: "Mystery",
-//         quote: "",
-//         image: "https://i.ibb.co/zFsHZXn/Enigma-Mage.png",
-//     }
-// ]
+
 
 //ROUTES
 
@@ -61,8 +36,10 @@ router.get('/3548magecreate6548', (req, res) => {
         console.log(`made ${response.length} mages`)
     })
     })
+    setTimeout(() => {
+        res.redirect('/mages')
+    }, 1500);
     
-    res.redirect('/mages')
 })
 
 //index
@@ -77,12 +54,6 @@ router.get('/', (req, res) => {
     })
 })
 
-//New
-// router.get('/new', (req, res) => {
-//     // res.send('New Potion Route')
-//     // res.render('new.ejs')
-//     res.render('potions/new.ejs')
-// })
 
 //show
 router.get('/:id', (req, res) => {
