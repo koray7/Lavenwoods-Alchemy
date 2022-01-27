@@ -33,8 +33,6 @@ const Mages = [
 ]
 
 //ROUTES
-
-//index
 router.get('/', (req, res) => {
     res.render('mages/mages.ejs', { mage: Mages })
     Mages.find({}, (err, allMages) => {
@@ -45,6 +43,7 @@ router.get('/', (req, res) => {
         }
     })
 })
+
 
 //show
 router.get('/:id', (req, res) => {

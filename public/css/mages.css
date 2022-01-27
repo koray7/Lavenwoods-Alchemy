@@ -1,10 +1,16 @@
-/* body {
+body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: green;
-    overflow: hidden;
     background-image:url('https://i.ibb.co/crBf8tF/mages.jpg');
-    display: inline-block;
-} */
+    display: flex;
+    margin-top: 380px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+h2 {
+    color: aliceblue;
+}

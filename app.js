@@ -36,6 +36,8 @@ app.get('/', (req, res) => {
     res.render('main.ejs')
 })
 
+//index
+
 
 
 //SERVER START

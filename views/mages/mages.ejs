@@ -40,7 +40,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ye' Mages!</title>
+    <title class="title"> Ye' Mages!</title>
     <link rel="stylesheet" type="text/css" href="css/mages.css" />
 </head>
 
@@ -52,8 +52,9 @@
                 <h2>
                     <%= mage[i].name %>
                 </h2>
-                <img src="<%= mage[i].image %>" alt="Enigma-Mage" border="0">
-
+                <a href="/potions/new" target="_blank">
+                    <img src="<%= mage[i].image %>" alt="Enigma-Mage">
+                </a>
             </div>
             <% } %>
 
