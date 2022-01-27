@@ -31,6 +31,40 @@ const Mage = require('../models/Mage')
 
 //ROUTES
 
+//seed
+router.get('/3548magecreate6548', (req, res) => {
+
+    
+    Mage.deleteMany({}).then((response) => {
+        Mage.insertMany([
+        {
+                    mageName: "Mage O' Flame",
+                    element: "Fire",
+                    image: "https://i.ibb.co/64LzfMQ/Flame-Mage.png",
+                },
+                 {
+                    mageName: "Mage O' Bolt",
+                    element: "Lightning",
+                    image: "https://i.ibb.co/72TQd3j/Bolt-Mage.png",
+                },
+                 {
+                    mageName: "Mage O' Frost",
+                    element: "Ice",
+                    image: "https://i.ibb.co/DVTHvCP/Frost-Mage.png",
+                },
+                 {
+                    mageName: "Mage O' Enigma",
+                    element: "Mystery",
+                    image: "https://i.ibb.co/zFsHZXn/Enigma-Mage.png",
+                }
+    ]).then((response) => {
+        console.log(`made ${response.length} mages`)
+    })
+    })
+    
+    res.redirect('/mages')
+})
+
 //index
 router.get('/', (req, res) => {
     
