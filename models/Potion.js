@@ -5,6 +5,7 @@ const potionSchema = new mongoose.Schema({
         type: String, required: true, default: "Unidentified Brew"
     },
     attributes: [String]
+    // type of mage/element string 
 }, {timestamps: true})
 
 const Potion = mongoose.model("Potion", potionSchema)
