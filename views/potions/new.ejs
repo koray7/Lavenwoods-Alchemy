@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="html/css" href="../../Styles/style.css">
+    <link rel="stylesheet" type="html/css" href="../../Styles/style.css">
     <title>New Potion</title>
+    <script defer src="/Script/script.js"></script>
 </head>
-<body>
+
+<body onload="getQuote()">
     <h1>New Potion</h1>
+    <div>
+        <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
+            day from me neighbor.</p>
+        <p id="mage-quote"></p>
+        <p>Did ye know that?</p>
+    </div>
     <img src="https://i.ibb.co/hmfvfZz/Potion-Bottle.png" alt="Potion-Bottle" border="0">
-        <form action="/potions" method="POST">
+    <form action="/potions" method="POST">
         <h2>Potion Name:</h2>
         <input type="text" name="potionName" placeholder="Potion Name Here"></br></br>
         <h2>Potion Effects:</h2>
@@ -18,4 +27,5 @@
         <input type="submit" value="Brew Your Potion!">
     </form>
 </body>
+
 </html>

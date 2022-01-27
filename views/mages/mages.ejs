@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ye' Mages!</title>
+    <script defer src="/Script/script.js"></script>
 
 </head>
 
@@ -17,7 +18,7 @@
                 <h2>
                     <%= mage[i].mageName %>
                 </h2>
-                <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
+                <a id="mage<%= i %>" class="mage-clicker" href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
             </div>
             <% } %>
 
