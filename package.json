@@ -1,26 +1,13 @@
 {
-  "name": "lavenwoods-alchemy",
-  "version": "1.0.0",
-  "description": "## App name: Lavenwoods Alchemy Short app description User chooses between 4 mages of an element class.  The mage they choose will craft them a potion based on their element, and the user will be able to define the effects of their potion. Once the potion is created, it will be added to their potion bag.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koray7/Lavenwoods-Alchemy.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/koray7/Lavenwoods-Alchemy/issues"
-  },
-  "homepage": "https://github.com/koray7/Lavenwoods-Alchemy#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "method-override": "^3.0.0",
+<<<<<<< HEAD
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15"
+=======
     "mongoose": "^6.1.8"
+>>>>>>> main
   }
 }

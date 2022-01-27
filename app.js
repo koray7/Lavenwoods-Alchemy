@@ -8,6 +8,8 @@ const Potion = require("./models/Potion")
 const Mage = require("./models/Mage")
 const magesController = require('./controllers/mages')
 const potionsController = require('./controllers/potions')
+app.use(express.static('public'))
+app.set('view engine', 'ejs');
 
 
 
@@ -28,8 +30,8 @@ app.use(express.static('public'))
 
 //MIDDLEWARE
 app.use(methodOverride('_method'))
-app.use(express.urlencoded({extended: false}))
-app.use(express.static('public'))
+app.use(express.urlencoded({ extended: false }))
+app.use(express.static(__dirname + 'public/css'))
 
 //Mages Controller
 app.use('/mages', magesController)
@@ -41,6 +43,8 @@ app.use('/potions', potionsController)
 app.get('/', (req, res) => {
     res.render('main.ejs')
 })
+
+//index
 
 
 
