@@ -9,9 +9,6 @@ const options = {
 
 let mageQuote = ""
 
-// const mageClicker = document.getElementsByClassName('mage-clicker')
-// mageClicker.addEventListener('click', getQuote)
-
 function getQuote(){
     fetch(url, options).then((resp) => {
         resp.json().then((data) =>{
@@ -21,10 +18,3 @@ function getQuote(){
             })
         })
     }
-
-    // window.onload = function() {
-    //   getQuote()
-       
-    // }
-
-    // module.exports = mageQuote
