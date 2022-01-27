@@ -77,8 +77,7 @@ Ingredient list on create page that intelligently creates potion effects based o
 
 
 
-
-
+![Screen Shot 2022-01-27 at 11 49 04 AM](https://user-images.githubusercontent.com/95322104/151415328-279adda2-bf1d-40c8-a137-8baf9a8df587.png)
 
 
 
