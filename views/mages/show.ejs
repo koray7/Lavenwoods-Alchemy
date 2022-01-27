@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ye 1 Mage</title>
+    <script defer src="/Script/script.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,12 @@
         <p>
             <img src="<%=mage.image%>">
         </p>
+    </div>
 
+    <div>
+        <p>Welcome to my craft potion brewery!  I am the mighty <span class="mage-name"><%= mage.mageName %></span>! I harness the power of <%= mage.element %>. What kind of potion would you like me to brew for ye?</p>
+    </div>
+    <!-- <div>
         <h2>Ye Mage Element:</h2>
         <p>
             <%= mage.element %>
@@ -25,7 +31,7 @@
             <%= mage.quote %>
         </p>
 
-    </div>
+    </div> -->
 
     <div>
 

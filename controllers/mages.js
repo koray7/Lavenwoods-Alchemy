@@ -1,9 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const Mage = require('../models/Mage')
-
-
-
+const mageQuote = require('../Public/Script/script')
+let wisdom = mageQuote
 //ROUTES
 
 //seed
@@ -62,7 +61,7 @@ router.get('/:id', (req, res) => {
             res.send(err)
             
         } else {
-            res.render('mages/show.ejs', {mage: foundMage})
+            res.render('mages/show.ejs', {mage: foundMage, mageQuote: wisdom})
         }
     })
 })
