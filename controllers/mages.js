@@ -53,6 +53,17 @@ router.get('/', (req, res) => {
     })
 })
 
+//New Potion
+
+router.get('/newpotion/:id', (req, res) => {
+    Mage.findById(req.params.id, (err, foundMage) => {
+        if(err) {
+            res.send(err)
+        } else {
+            res.render('potions/new.ejs', {mage: foundMage})
+        }
+    })
+})
 
 //show
 router.get('/:id', (req, res) => {
