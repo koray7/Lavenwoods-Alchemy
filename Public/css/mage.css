@@ -1,5 +1,8 @@
-body{
+
+.mainbackground {
     background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
+    text-align: center;
+    margin-top: 20%;
 }
 div {
     display: inline-flex;
@@ -11,3 +14,37 @@ input{
     flex-direction: row;
     flex-wrap: wrap;
 }
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    text-shadow: 3px 3px #fd9800;
+}
+.summon {
+color: aliceblue;
+display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(250, 249, 244);
+  background-color: #cddbce;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.summon:hover {background-color: #fd9800}
+
+.summon:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.page2 {
+    
+flex-flow: row;
+
+}
+/* @media only screen and (max-width: 600px) { */
