@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +33,9 @@
         </div>
     </form>
 </body> -->
+=======
+
+>>>>>>> main
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,21 +44,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title class="title"> Ye' Mages!</title>
     <link rel="stylesheet" type="text/css" href="css/mages.css" />
+=======
+    <title>Ye' Mages!</title>
+   
+>>>>>>> main
 </head>
 
 <body>
 
     <% for (let i=0; i<mage.length; i++){ %>
-        <% console.log(mage[i]) %>
+        <% console.log('hellloooo', mage[i].image) %>
             <div>
                 <h2>
-                    <%= mage[i].name %>
+                    <%= mage[i].mageName %>
                 </h2>
+<<<<<<< HEAD
                 <a href="/potions/new" target="_blank">
                     <img src="<%= mage[i].image %>" alt="Enigma-Mage">
                 </a>
+=======
+                <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
+                <!-- <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>"> -->
+                <form action="/mages/<%= mage[i].id %>?_method=DELETE" method="POST">
+                    <button type="submit">Delete ye mage?</button>
+                </form>
+>>>>>>> main
             </div>
             <% } %>
 
