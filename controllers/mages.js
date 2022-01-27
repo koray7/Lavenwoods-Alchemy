@@ -55,7 +55,7 @@ router.get('/:id', (req, res) => {
     Mage.findById(req.params.id, (err, foundMage) => {
         if(err) {
             res.send(err)
-            console.log("Am I working?")
+            
         } else {
             res.render('mages/show.ejs', {mage: foundMage})
         }
