@@ -13,6 +13,7 @@
 <body onload="getQuote()">
     <h1>New Potion</h1>
     <div>
+        <h1>I am <%= mage.mageName %>! </h1>
         <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
             day from me neighbor.</p>
         <p id="mage-quote"></p>
@@ -25,6 +26,16 @@
         <h2>Potion Effects:</h2>
         <textarea name="attributes" id="" cols="30" rows="10"></textarea></br>
         <input type="submit" value="Brew Your Potion!">
+        <legend>
+            <label for="mage">
+                Mage that created this potion:
+                <select name="mage" id="mage">
+                    <option value="comingfromdb"></option>
+                    <option value="<%= mage.mageName %> "></option>
+                    <!-- how do we get data from the mages to here? -->
+                </select>
+            </label>
+        </legend>
     </form>
 </body>
 
