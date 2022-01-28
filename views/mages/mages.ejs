@@ -13,20 +13,24 @@
 
 </head>
 
-<body id="mages">
+<body class="mage-body">
 
-    <div class="page2">
-        <% for (let i=0; i<mage.length; i++){ %>
+    <% for (let i=0; i<mage.length; i++){ %>
+        <% console.log('hellloooo', mage[i].image) %>
 
-            <% console.log('hellloooo', mage[i].image) %>
-                <div>
+            <div class="mage-flex">
+                <div class="individual-mage">
+
+                    <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" class="mage-image"
+                            alt="Enigma-Mage" border="0"></a>
+
                     <h2>
                         <%= mage[i].mageName %>
-                    </h2><br>
-                    <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage"></a>
+                    </h2>
                 </div>
                 <% } %>
-    </div>
+            </div>
+
 </body>
 
 </html>

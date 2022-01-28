@@ -2,7 +2,7 @@ const express = require('express')
 const { Module } = require('module')
 const router = express.Router()
 const Potion = require('../models/Potion')
-
+const Mage = require('../models/Mage')
 //ROUTING
 
 //index
@@ -16,20 +16,27 @@ router.get('/', (req, res) => {
     })
 })
 
+
+
 //New
 router.get('/new', (req, res) => {
-    res.render('potions/new.ejs')
+    Mage.find({})
+    // res.render('potions/new.ejs')
 })
 
 //show
 router.get('/:id', (req, res) => {
-    Potion.findById(req.params.id, (err, foundPotion) => {
+    Potion.findById(req.params.id).populate('mage').exec(
+        (err, foundPotion) => {
         if(err) {
             res.send(err)
         } else {
+            // res.send(foundPotion)
             res.render('potions/show.ejs', {potion: foundPotion})
         }
     })
+    
+    
 })
 
 //edit
