@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Nova+Cut&family=Snowburst+One&display=swap');
+
+
 
 .main-body {
-  background-image: url("https://m.media-amazon.com/images/I/71htfdE9AWL._AC_SL1462_.jpg")
+  background-image: url("https://m.media-amazon.com/images/I/71htfdE9AWL._AC_SL1462_.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .mage-body {
   background-image: url("https://www.dndspeak.com/wp-content/uploads/2021/06/Thrift.png");
@@ -8,6 +13,41 @@
   background-repeat: no-repeat;
 }
 
+.welcome-sign-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.welcome-sign {
+  background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
+  
+  background-size:cover;
+  background-repeat: no-repeat;
+  border: 2px solid rgba(165, 42, 42, 0);
+  border-radius: 20px;
+  max-width: 60vw;
+  min-width: 60vw;
+  min-height: 50vh;
+}
+
+.sign-text {
+  font-family: 'Nova Cut', cursive;
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
+  color: rgb(59, 36, 1);
+  text-shadow: 2px 3px 1px rgb(173, 151, 114);
+}
+
+.summon {
+  font-family: 'Snowburst One', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
 /* div {
     display: inline-flex;
     flex-direction: row;
@@ -47,7 +87,6 @@ display: inline-block;
   transform: translateY(4px);
 } */
 .mage-flex {
-  
   display: flex;
   justify-content: center;
   align-items: center;
