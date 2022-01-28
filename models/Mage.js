@@ -6,7 +6,8 @@ const mageSchema = new mongoose.Schema ({
     },
     element: String,
     quote: String,
-    image: String 
+    image: String, 
+    ingredients: [{ingredientName: String, effect: String}],
 }, {timestamps: true})
 
 const Mage = mongoose.model("Mage", mageSchema)
