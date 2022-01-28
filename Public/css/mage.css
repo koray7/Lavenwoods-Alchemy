@@ -173,7 +173,7 @@ display: inline-block;
     left: 64%;
     margin-left: -37.5px;
     display: block;
-
+}
 .summon:hover {
   transform: scale(1.2);
   box-shadow: 0 0 12px 5px rgb(78, 78, 78);
