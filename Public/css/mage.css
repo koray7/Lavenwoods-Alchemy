@@ -45,8 +45,8 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  color: rgb(59, 36, 1);
-  text-shadow: 2px 3px 1px rgb(173, 151, 114);
+  /* color: rgb(59, 36, 1);
+  text-shadow: 2px 3px 1px rgb(173, 151, 114); */
 }
 
 .summon {
