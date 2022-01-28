@@ -23,11 +23,11 @@
     <form action="/potions" method="POST">
         <h2>Potion Name:</h2>
         <input type="text" name="potionName" placeholder="Potion Name Here"></br></br>
-        <h2>Potion Effects:</h2>
+        <h2>Choose Your Ingredients:</h2>
         <% for (let i=0; i< mage.ingredients.length; i++) { %>
-                <p><%= mage.ingredients[i] %> </p>
+                <p><%= mage.ingredients[i].ingredientName %> <input type="checkbox" name="attributes" value="<%= mage.ingredients[i].effect %>"/> </p>
             <%}%>
-                <textarea name="attributes" id="" cols="30" rows="10"></textarea></br>
+                <!-- <textarea name="attributes" id="" cols="30" rows="10"></textarea></br> -->
                 <input type="submit" value="Brew Your Potion!">
                 <legend>
                     <label for="mage">

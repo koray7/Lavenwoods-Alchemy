@@ -11,33 +11,40 @@
 
 <body>
     <div class="view-potion">
-        
+
         <div class="potion-div">
             <h1>
                 <%= potion.potionName %>
             </h1>
             <h2>Potion information:</br>
-            
+
             </h2>
-            <p>
-                 <%= potion.attributes %></br>
-            Brewed by: <%= potion.mage.mageName %></br>
-            Element: <%= potion.mage.element %>   
-            </p>
+            <ul>
+            <% for (let i=0; i< potion.attributes.length; i++) {%>
+                <li>
+                    <%= potion.attributes[i] %>
+                </li>
+                <%}%>
+                    </ul>
+                    <p>
+                        </br>
+                        Brewed by: <%= potion.mage.mageName %></br>
+                            Element: <%= potion.mage.element %>
+                    </p>
         </div>
-        
 
-            
+
+
         <div class="potion-buttons">
-        <form action="/potions/<%= potion.id %>?_method=DELETE" method="POST">
-            <button class="button" type="submit">Drink This Potion!</button>
-        </form>
-        <a href="/potions"><button class="button">Back To Potions Bag</button></a>
-    </div>
-    <div>
+            <form action="/potions/<%= potion.id %>?_method=DELETE" method="POST">
+                <button class="button" type="submit">Drink This Potion!</button>
+            </form>
+            <a href="/potions"><button class="button">Back To Potions Bag</button></a>
+        </div>
+        <div>
 
 
-    </div>
+        </div>
 </body>
 
 </html>
