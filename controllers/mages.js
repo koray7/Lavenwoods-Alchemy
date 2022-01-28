@@ -41,7 +41,7 @@ router.get('/3548magecreate6548', (req, res) => {
     })
     setTimeout(() => {
         res.redirect('/mages')
-    }, 1500);
+    }, 1000);
     
 })
 
