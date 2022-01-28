@@ -1,50 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Nova+Cut&family=Snowburst+One&display=swap');
 
-.mainbackground {
-    background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
-    text-align: center;
-    margin-top: 20%;
-}
-div {
-    display: inline-flex;
-    flex-direction: row;
+
+
+.main-body {
+  background-image: url("https://m.media-amazon.com/images/I/71htfdE9AWL._AC_SL1462_.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-input{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.mage-body {
+  background-image: url("https://www.dndspeak.com/wp-content/uploads/2021/06/Thrift.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-h1 {
-    text-align: center;
-    color: aliceblue;
-    font-size: 50px;
-    text-shadow: 3px 3px #fd9800;
+
+.welcome-sign-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-.summon {
-color: aliceblue;
-display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
+
+.welcome-sign {
+  background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
+  
+  background-size:cover;
+  background-repeat: no-repeat;
+  border: 2px solid rgba(165, 42, 42, 0);
+  border-radius: 20px;
+  max-width: 60vw;
+  min-width: 60vw;
+  min-height: 50vh;
+}
+
+.sign-text {
+  font-family: 'Nova Cut', cursive;
+  font-size: 50px;
+  padding: 30px;
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: rgb(250, 249, 244);
-  background-color: #cddbce;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  color: rgb(59, 36, 1);
+  text-shadow: 2px 3px 1px rgb(173, 151, 114);
 }
-.summon:hover {background-color: #fd9800}
 
-.summon:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.summon {
+  font-family: 'Snowburst One', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(78, 42, 0);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 100ms;
 }
-.page2 {
-    
-flex-flow: row;
 
+.summon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 12px 5px rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+.mage-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+
+.individual-mage {
+  font-family: 'Nova Cut', cursive;
+  font-size: 24px;
+  
+  display:block;
+  text-align: center;
+  max-width: 100%;
+  color: white;
+  text-shadow: 4px 2px black;
+  
+}
+
+.mage-image {
+  transition: 200ms;
+}
+
+.mage-image:hover {
+  transform: scale(1.3);
+}
+
+.view-potion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("https://i.ibb.co/hmfvfZz/Potion-Bottle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-shadow: 2px 2px black;
+  width: 300px;
+  
+  padding: 30px;
+}
+
+.potion-div {
+  display:block;
+  color: #fcfcfc;
+  background-color: rgba(77, 77, 77, 0.74);
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 90%;
+  padding: 40px;
+  align-items: center;
+}
+
+.potion-buttons {
+  display: flex;
+  margin-top: 50px;
+  
+}
+
+.button {
+  background-color: #666;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 15px 2px;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 /* @media only screen and (max-width: 600px) { */

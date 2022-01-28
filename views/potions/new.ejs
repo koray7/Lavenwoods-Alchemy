@@ -30,10 +30,11 @@
             <label for="mage">
                 Mage that created this potion:
                 <select name="mage" id="mage">
-                    <option value="comingfromdb"></option>
-                    <option value="<%= mage.mageName %> "></option>
-                    <!-- how do we get data from the mages to here? -->
+                    <option value="<%= mage._id %>"><%= mage.mageName %></option>
                 </select>
+                 
+                 
+                
             </label>
         </legend>
     </form>
