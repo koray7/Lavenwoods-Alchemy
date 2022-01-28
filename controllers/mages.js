@@ -15,24 +15,28 @@ router.get('/3548magecreate6548', (req, res) => {
                     mageName: "Mage O' Flame",
                     element: "Fire",
                     image: "https://i.ibb.co/64LzfMQ/Flame-Mage.png",
+                    _id: "61f330c3d78647941020d715",
                 },
                  {
                     mageName: "Mage O' Bolt",
                     element: "Lightning",
                     image: "https://i.ibb.co/72TQd3j/Bolt-Mage.png",
+                    _id: "61f330c3d78647941020d716",
                 },
                  {
                     mageName: "Mage O' Frost",
                     element: "Ice",
                     image: "https://i.ibb.co/DVTHvCP/Frost-Mage.png",
+                    _id: "61f330c3d78647941020d717",
                 },
                  {
                     mageName: "Mage O' Enigma",
                     element: "Mystery",
                     image: "https://i.ibb.co/zFsHZXn/Enigma-Mage.png",
+                    _id: "61f330c3d78647941020d718",
                 }
     ]).then((response) => {
-        console.log(`made ${response.length} mages`)
+        console.log(`made ${response} mages`)
     })
     })
     setTimeout(() => {
