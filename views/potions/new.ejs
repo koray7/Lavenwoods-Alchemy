@@ -10,7 +10,7 @@
     <script defer src="/Script/script.js"></script>
 </head>
 
-<body onload="getQuote()">
+<body onload="getQuote(), nameValue()">
     <h1>New Potion</h1>
     <div>
         <h1>I am <%= mage.mageName %>! </h1>
@@ -22,7 +22,7 @@
     <img src="https://i.ibb.co/hmfvfZz/Potion-Bottle.png" alt="Potion-Bottle" border="0">
     <form action="/potions" method="POST">
         <h2>Potion Name:</h2>
-        <input type="text" name="potionName" placeholder="Potion Name Here"></br></br>
+        <input id="potion-name" type="text" name="potionName" placeholder="Potion Name Here" value=""></br></br>
         <h2>Choose Your Ingredients:</h2>
         <% for (let i=0; i< mage.ingredients.length; i++) { %>
                 <p><%= mage.ingredients[i].ingredientName %> <input type="checkbox" name="attributes" value="<%= mage.ingredients[i].effect %>"/> </p>
