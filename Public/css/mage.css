@@ -3,6 +3,9 @@
     background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
     text-align: center;
     margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 div {
     display: inline-flex;
@@ -19,6 +22,8 @@ h1 {
     color: aliceblue;
     font-size: 50px;
     text-shadow: 3px 3px #fd9800;
+    font-family: 'Special Elite', cursive;
+    /* margin-top: 15px; */
 }
 .summon {
 color: aliceblue;
@@ -30,7 +35,7 @@ display: inline-block;
   text-decoration: none;
   outline: none;
   color: rgb(250, 249, 244);
-  background-color: #cddbce;
+  background-color: #e6bd07;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -43,8 +48,117 @@ display: inline-block;
   transform: translateY(4px);
 }
 .page2 {
-    
-flex-flow: row;
-
+    width: 100%;
+    height: auto;
+    flex-flow: row;
+    object-fit: contain;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
-/* @media only screen and (max-width: 600px) { */
+
+#mages {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.7, 0.7);
+    object-fit: contain;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .page2{
+        display: inline-block;
+    }
+}
+.mageimage {
+    text-align: center;
+}
+.brewyeBtn {
+    color: aliceblue;
+display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(250, 249, 244);
+  background-color: #f1950b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px hsl(0, 77%, 74%);
+  margin-top: 10px;
+}
+.brewye:hover {background-color: #fd9800}
+
+.magetext {
+    text-align: center;
+    color: rgb(212, 81, 81);
+    font-size: 17px;
+    text-shadow: 1px 1px #f8a82f;
+    font-family: 'Special Elite', cursive;
+}
+.yeMageName {
+    background-color: #999;
+}
+.magePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* .mageName {
+    background-color: #f8a82f;
+    text-align: center;
+    padding: 5px;
+    border: rgb(0, 0, 0);
+} */
+
+.bubble {
+    text-align: center;
+    vertical-align: middle; 
+    position: relative;
+    background: linear-gradient(1deg, #ffab45 71%, #ff8c00 100%);
+    color: #ffe8e8;
+    font-family: Impact;
+    font-size: 40px;
+    line-height: 45px;
+    filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
+    width: 415px;
+    height: 108px;
+    border-radius: 60px;
+    padding: 10px;
+    border: #edd8d8 solid 11px;
+    flex-direction: column;
+    
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 17px 53px 0 0;
+    border-color: #e8c7c7 transparent transparent transparent;
+    bottom: -17px;
+    left: 64%;
+    margin-left: -26.5px;
+}
+.bubble:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 0;
+    border-style: solid;
+    border-width: 28px 64px 0 0;
+    border-color: #edd8d8 transparent transparent transparent;
+    bottom: -39px;
+    left: 64%;
+    margin-left: -37.5px;
+    display: block;
+}

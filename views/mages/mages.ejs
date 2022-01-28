@@ -7,23 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/mage.css" rel="stylesheet">
     <title>Ye' Mages!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/Script/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="mages">
 
-    <% for (let i=0; i<mage.length; i++){ %>
-        <% console.log('hellloooo', mage[i].image) %>
-            <div class="page2">
+    <div class="page2">
+        <% for (let i=0; i<mage.length; i++){ %>
+
+            <% console.log('hellloooo', mage[i].image) %>
                 <div>
                     <h2>
                         <%= mage[i].mageName %>
-                    </h2>
-                    <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
+                    </h2><br>
+                    <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" alt="Enigma-Mage"></a>
                 </div>
                 <% } %>
-            </div>
+    </div>
 </body>
 
 </html>
