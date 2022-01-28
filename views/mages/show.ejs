@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/magept2.css" rel="stylesheet">
     <title>Ye 1 Mage</title>
+    
 </head>
 
 <body>
-    <div>
-        <h1>Ye Mage Name: <%= mage.mageName %>
+    <div class="bubble">
+        <h1> <%= mage.mageName %>
         </h1>
         <p>
             <img src="<%=mage.image%>">
@@ -32,11 +34,11 @@
 
     </div> -->
 
-    <div>
+    <div class="buttons">
 
-        <a href="/mages">Back to Mages List</a>
+        <button><a href="/mages">Back to Mages List</a></button>
 
-        <a href="/mages/newpotion/<%= mage._id %>">Brew Ye Potion</a>
+        <button><a href="/mages/newpotion/<%= mage._id %>">Brew Ye Potion</a></button>
 
     </div>
 

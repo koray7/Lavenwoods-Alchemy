@@ -1,0 +1,86 @@
+
+
+
+
+
+/* .mageimage {
+    text-align: center;
+}  */
+/* .buttons {
+  color: aliceblue;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(250, 249, 244);
+  background-color: #f1950b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px hsl(0, 77%, 74%);
+  margin-top: 10px;
+}
+.buttons:hover {background-color: #fd9800}
+
+.magetext {
+    text-align: center;
+    color: rgb(212, 81, 81);
+    font-size: 17px;
+    text-shadow: 1px 1px #f8a82f;
+    font-family: 'Special Elite', cursive;
+}
+
+.magePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.bubble {
+    text-align: center;
+    vertical-align: middle; 
+    position: relative;
+    background: linear-gradient(1deg, #ffab45 71%, #ff8c00 100%);
+    color: #ffe8e8;
+    font-family: Impact;
+    font-size: 40px;
+    line-height: 45px;
+    filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
+    width: 415px;
+    height: 108px;
+    border-radius: 60px;
+    padding: 10px;
+    border: #edd8d8 solid 11px;
+    flex-direction: column;
+
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 17px 53px 0 0;
+    border-color: #e8c7c7 transparent transparent transparent;
+    bottom: -17px;
+    left: 64%;
+    margin-left: -26.5px;
+}
+.bubble:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 0;
+    border-style: solid;
+    border-width: 28px 64px 0 0;
+    border-color: #edd8d8 transparent transparent transparent;
+    bottom: -39px;
+    left: 64%;
+    margin-left: -37.5px;
+    display: block;
+} */
