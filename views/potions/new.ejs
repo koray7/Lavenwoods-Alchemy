@@ -6,20 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="html/css" href="../../Styles/style.css">
-    <title>New Potion</title>
+    <title>Creating Potion</title>
+    <link href="/css/potions/createpotion.css" rel="stylesheet">
     <script defer src="/Script/script.js"></script>
 </head>
 
 <body onload="getQuote()">
-    <h1>New Potion</h1>
-    <div>
+    <!-- <h1>New Potion</h1> -->
+    <div class="mage-info">
         <h1>I am <%= mage.mageName %>! </h1>
         <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
             day from me neighbor.</p>
         <p id="mage-quote"></p>
         <p>Did ye know that?</p>
+
+        <div class="mage-image">
+            <img src="<%=mage.image%>">
+        </div>
     </div>
-    <img src="https://i.ibb.co/hmfvfZz/Potion-Bottle.png" alt="Potion-Bottle" border="0">
+
+        <img src="https://i.ibb.co/hmfvfZz/Potion-Bottle.png" alt="Potion-Bottle" border="0">
+    
+    
+    
     <form action="/potions" method="POST">
         <h2>Potion Name:</h2>
         <input type="text" name="potionName" placeholder="Potion Name Here"></br></br>
