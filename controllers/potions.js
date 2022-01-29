@@ -3,6 +3,8 @@ const { Module } = require('module')
 const router = express.Router()
 const Potion = require('../models/Potion')
 const Mage = require('../models/Mage')
+
+
 //ROUTING
 
 //index
@@ -16,14 +18,6 @@ router.get('/', (req, res) => {
     })
 })
 
-
-
-//New
-router.get('/new', (req, res) => {
-    Mage.find({})
-    // res.render('potions/new.ejs')
-})
-
 //show
 router.get('/:id', (req, res) => {
     Potion.findById(req.params.id).populate('mage').exec(
@@ -31,7 +25,6 @@ router.get('/:id', (req, res) => {
         if(err) {
             res.send(err)
         } else {
-            // res.send(foundPotion)
             res.render('potions/show.ejs', {potion: foundPotion})
         }
     })
@@ -44,14 +37,12 @@ router.get('/:id/edit', (req, res) => {
     res.send(`Edit route for ${req.params.id}`)
 })
 
-
 //create
 router.post('/', (req, res) => {
     Potion.create(req.body, (err, newPotion) => {
         if (err) {
             res.send(err)
         } else {
-            console.log(newPotion)
             res.redirect('/potions')
         }
     })

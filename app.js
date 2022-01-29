@@ -1,4 +1,3 @@
-
 //DEPENDENCIES
 const express = require("express")
 const app = express()
@@ -9,13 +8,8 @@ const Mage = require("./models/Mage")
 const magesController = require('./controllers/mages')
 const potionsController = require('./controllers/potions')
 
-
-
-
 // EJS
 app.set('view engine', 'ejs')
-
-
 
 //MONGOOSE
 const mongoose = require('mongoose')
@@ -24,7 +18,6 @@ mongoose.connect(URI, () => console.log(`Mongoose connected at ${URI}`))
 
 //STATIC (JS, CSS)
 app.use(express.static('public'))
-
 
 //MIDDLEWARE
 app.use(methodOverride('_method'))
@@ -36,13 +29,10 @@ app.use('/mages', magesController)
 //Potions Controller
 app.use('/potions', potionsController)
 
-
 //HOME ROUTE
 app.get('/', (req, res) => {
     res.render('main.ejs')
 })
-
-
 
 //SERVER START
 app.listen(PORT, () => {
