@@ -1,14 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const Mage = require('../models/Mage')
-const mageQuote = require('../Public/Script/script')
-let wisdom = mageQuote
+
 //ROUTES
 
-//seed
+//Mage Generation
 router.get('/3548magecreate6548', (req, res) => {
-
-
     Mage.deleteMany({}).then((response) => {
         Mage.insertMany([
             {
@@ -112,7 +109,6 @@ router.get('/3548magecreate6548', (req, res) => {
                 _id: "61f330c3d78647941020d718",
             }
         ]).then((response) => {
-            console.log(`made ${response} mages`)
         })
     })
     setTimeout(() => {
@@ -134,7 +130,6 @@ router.get('/', (req, res) => {
 })
 
 //New Potion
-
 router.get('/newpotion/:id', (req, res) => {
     Mage.findById(req.params.id, (err, foundMage) => {
         if (err) {
@@ -152,7 +147,7 @@ router.get('/:id', (req, res) => {
             res.send(err)
 
         } else {
-            res.render('mages/show.ejs', { mage: foundMage, mageQuote: wisdom })
+            res.render('mages/show.ejs', { mage: foundMage })
         }
     })
 })
@@ -163,7 +158,6 @@ router.post('/', (req, res) => {
         if (err) {
             res.send(err)
         } else {
-            console.log(`mage created here: ${newMage}`)
             res.redirect('/mages')
         }
     })
@@ -181,7 +175,6 @@ router.delete('/:id', (req, res) => {
 })
 
 //update
-
 router.put('/:id', (req, res) => {
     res.send(`mage update: ${req.params.id}`)
 })

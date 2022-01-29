@@ -11,7 +11,6 @@ const potionSchema = new mongoose.Schema({
         ref: 'Mage'
     
     }
-   
 }, {timestamps: true})
 
 const Potion = mongoose.model("Potion", potionSchema)
