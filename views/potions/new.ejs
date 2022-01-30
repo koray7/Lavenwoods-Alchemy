@@ -27,7 +27,7 @@
             
         <div class="ingredients">
             <form action="/potions" method="POST">
-            <h2>Potion Name:</h2>
+            <h2>Choose Your Potion Name:</h2>
             <input id="potion-name" type="text" name="potionName" placeholder="Potion Name Here" value=""></br></br>
             <h2>Choose Your Ingredients:</h2>
             <% for (let i=0; i< mage.ingredients.length; i++) { %>
@@ -36,7 +36,7 @@
                             value="<%= mage.ingredients[i].effect %>" />
                 </p>
                 <%}%>
-                    <input type="submit" value="Brew Your Potion!">
+                    <input class="make-potion-now" type="submit" value="Brew Your Potion!">
                     <legend>
                         <div class="mage">
                         <label for="mage">

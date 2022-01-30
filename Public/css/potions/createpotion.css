@@ -117,5 +117,21 @@ body {
     display: block;
 }
 
-
+.make-potion-now {
+    text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #fac370;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px hsl(0, 77%, 74%);
+  margin-top: 1px;
+}
 
