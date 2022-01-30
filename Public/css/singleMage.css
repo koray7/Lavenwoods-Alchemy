@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Nova+Cut&family=Snowburst+One&family=Zen+Kurenaido&display=swap');
+
+
 .magebody {
     text-align: center;
     background-image: url("https://www.dndspeak.com/wp-content/uploads/2021/06/Thrift.png");
@@ -125,78 +127,3 @@
 
 
 
-
-
-/* .page2 {
-    width: 100%;
-    height: auto;
-    flex-flow: row;
-    object-fit: contain;
-    /* display: flex;
-    flex-wrap: wrap; */
-
-
-/* #mages {
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-    transform: scale(0.5, 0.5);
-    -ms-transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.7, 0.7);
-    object-fit: contain;
-    background-size: cover;
-} */
-
-/* @media only screen and (max-width: 600px) {
-    .page2{
-        display: inline-block;
-    }
-} */
-/* .mageimage {
-    text-align: center;
-}
-.brewyeBtn {
-    color: aliceblue;
-display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: rgb(250, 249, 244);
-  background-color: #f1950b;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px hsl(0, 77%, 74%);
-  margin-top: 10px;
-}
-.brewye:hover {background-color: #fd9800}
-
-.magetext {
-    text-align: center;
-    color: rgb(212, 81, 81);
-    font-size: 17px;
-    text-shadow: 1px 1px #f8a82f;
-    font-family: 'Special Elite', cursive;
-}
-.yeMageName {
-    background-color: #999;
-}
-.magePic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
-/* .mageName {
-    background-color: #f8a82f;
-    text-align: center;
-    padding: 5px;
-    border: rgb(0, 0, 0);
-} */
-/* h1 {
-    margin-top: 30px;
-} */
