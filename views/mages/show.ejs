@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/magept2.css" rel="stylesheet">
+    <link href="/css/singleMage.css" rel="stylesheet">
     <title>Ye 1 Mage</title>
     
 </head>
 
-<body>
+<body class="magebody">
     <div class="bubble">
-        <h1> <%= mage.mageName %>
+        <h1 class="bubbleText">
         </h1>
-        <p>
-            <img src="<%=mage.image%>">
+
+        <div class="magetext">
+            <p><b>Welcome to my craft potion brewery! I am the mighty <span class="mage-name"><%= mage.mageName %>!</span> I harness the power of <%= mage.element %>. So, are we gonna brew ye a <%= mage.element %> potion?
+                </b></p>
+        </div>
+    </div>
+    <div class="magePic">
+        <br><img src="<%=mage.image%>">
         </p>
     </div>
 
-    <div>
-        <p>Welcome to my craft potion brewery! I am the mighty <span class="mage-name">
-                <%= mage.mageName %>
-            </span>! I harness the power of <%= mage.element %>. What kind of potion would you like me to brew for ye?
-        </p>
+    <div id="brewyeBtn">
+        <a href="/mages" style="text-decoration: none;">Back to Mages List</a>
     </div>
-    <div>
-
-        <button><a href="/mages">Back to Mages List</a></button>
-
-        <button><a href="/mages/newpotion/<%= mage._id %>">Brew Ye Potion</a></button>
-
+    <div id="backBtn">
+        <a href="/mages/newpotion/<%= mage._id %>" style="text-decoration: none;">Brew Ye Potion</a>
     </div>
 
 
