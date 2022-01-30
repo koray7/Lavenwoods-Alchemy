@@ -1,16 +1,92 @@
 
 
+
+
+body {
+    background-image: url("https://www.dndspeak.com/wp-content/uploads/2021/06/Thrift.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+
 .mage-info{
     text-align: center;
     
 }
 
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
+    display: inline-block;
+    position:absolute;
+    margin-left: 30%;
+    margin-right: 10%;
+    width: 30%;
     max-width: 100%;
-    height: auto;
+    height: 60%;
 }
+
+.mage {
+    display: none;
+}
+
+.mage-image {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 10%;
+    width: 70%;
+
+
+}
+
+.bubble {
+    text-align: center;
+    vertical-align: middle; 
+    position: relative;
+    left: 40%;
+    background: linear-gradient(1deg, #ffab45 71%, #ff8c00 100%);
+    color: #ffe8e8;
+    font-family: Impact;
+    font-size: 18px;
+    line-height: 25px;
+    filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
+    width: 415px;
+    height: 200px;
+    border-radius: 60px;
+    padding: 10px;
+    border: #edd8d8 solid 11px;
+
+
+
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 17px 53px 0 0;
+    border-color: #e8c7c7 transparent transparent transparent;
+    bottom: -17px;
+    left: 64%;
+    margin-left: -26.5px;
+}
+
+.bubble:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 0;
+    border-style: solid;
+    border-width: 28px 64px 0 0;
+    border-color: #edd8d8 transparent transparent transparent;
+    bottom: -39px;
+    left: 64%;
+    margin-left: -37.5px;
+    display: block;
+}
+
+
 

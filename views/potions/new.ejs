@@ -14,12 +14,14 @@
 <body onload="getQuote(), nameValue()">
     
     <div>
-        <img src="<%= mage.image %> ">
-        <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
+        <div class="bubble">
+       
+            <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
             day from me neighbor.</p>
-        <p id="mage-quote"></p>
-        <p>Did ye know that?</p>
-
+            <p id="mage-quote"></p>
+            <p>Did ye know that?</p>
+        </div>
+        
         <div class="mage-image">
             <img src="<%=mage.image%>">
         </div>
@@ -41,6 +43,7 @@
             <%}%>
                 <input type="submit" value="Brew Your Potion!">
                 <legend>
+                    <div class="mage">
                     <label for="mage">
                         Mage that created this potion:
                         <select name="mage" id="mage">
@@ -52,6 +55,7 @@
 
 
                     </label>
+                    </div>
                 </legend>
     </form>
 </body>
