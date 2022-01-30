@@ -24,46 +24,54 @@
             <p>Did ye know that?</p>
         </div>
         </div>
-
-        <div class="mage-image">
-            <img src="<%=mage.image%>">
-         
-        </div>
-    </div>
-
-    <div class="potion-bottle">
-        <img src="https://i.imgur.com/jHF4IAW.png" alt="Potion-Bottle" border="0">
-    </div>
-    
-    <div class="ingredients">
-    <form action="/potions" method="POST">
-        <h2>Potion Name:</h2>
-        <input id="potion-name" type="text" name="potionName" placeholder="Potion Name Here" value=""></br></br>
-        <h2>Choose Your Ingredients:</h2>
-        <% for (let i=0; i< mage.ingredients.length; i++) { %>
-            <p>
-                <%= mage.ingredients[i].ingredientName %> <input type="checkbox" name="attributes"
-                        value="<%= mage.ingredients[i].effect %>" />
-            </p>
-            <%}%>
-                <input type="submit" value="Brew Your Potion!">
-                <legend>
-                    <div class="mage">
-                    <label for="mage">
-                        Mage that created this potion:
-                        <select name="mage" id="mage">
-                            <option value="<%= mage._id %>">
-                                <%= mage.mageName %>
-                            </option>
-                        </select>
-
-
-
+            
+        <div class="ingredients">
+            <form action="/potions" method="POST">
+            <h2>Potion Name:</h2>
+            <input id="potion-name" type="text" name="potionName" placeholder="Potion Name Here" value=""></br></br>
+            <h2>Choose Your Ingredients:</h2>
+            <% for (let i=0; i< mage.ingredients.length; i++) { %>
+                <p>
+                    <%= mage.ingredients[i].ingredientName %> <input type="checkbox" name="attributes"
+                            value="<%= mage.ingredients[i].effect %>" />
+                </p>
+                <%}%>
+                    <input type="submit" value="Brew Your Potion!">
+                    <legend>
+                        <div class="mage">
+                        <label for="mage">
+                            Mage that created this potion:
+                            <select name="mage" id="mage">
+                                <option value="<%= mage._id %>">
+                                    <%= mage.mageName %>
+                                </option>
+                            </select>
                     </label>
-                    </div>
-                </legend>
-    </form>
-    </div>
+            </div>
+            </legend>
+            </form>
+
+        </div>
+        <section class="container">
+
+            <div class="potion-bottle">
+                <img src="https://i.imgur.com/jHF4IAW.png" alt="Potion-Bottle" border="0">
+            </div>
+            <div class="mage-image">
+                <img src="<%=mage.image%>">
+            </div>
+
+        </section>
+        
+       
+            
+        
+    </div>    
+
+            
+
+
+  
 </body>
 
 </html>

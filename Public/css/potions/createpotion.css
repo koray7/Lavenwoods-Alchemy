@@ -16,29 +16,29 @@ body {
     
 }
 
+
+
 .ingredients {
     display: flex;
-    text-align: center;
+    color:ivory;
+    text-align: left;
+    padding-left: 250px;
     flex-direction: column;
-  
-
-   
-    
     filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
     transition: 200ms;
 }
 
-.potion-bottle.img{
+
+.potion-bottle{
     display: flex;
-    justify-content: flex-end;
-    margin-top: 0px;
-    display: inline ;
-    margin-left: 100px;
-    margin-right: 100px;
-    width: auto;
-    height: 10%;
-    filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
-    transition: 200ms;
+    position: absolute; 
+    top: 400px;
+    left: 500px;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+ 
+   
   
 }
 
@@ -46,19 +46,17 @@ body {
     display: none;
 }
 
-.mage-image {
+.mage-image{
     display: flex;
-    justify-content: right;
-   
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    right: 90px;
+    top: 150px;
 
- 
-    filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
-    transition: 200ms;
 
 }
-.mage-image:hover {
-        transform: scale(1.1);
-}
+
 .bubbleText {
     margin-top: 10px;
     margin-bottom: 10px;
