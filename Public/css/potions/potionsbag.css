@@ -1,0 +1,55 @@
+.bag-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.dndspeak.com/wp-content/uploads/2021/06/Thrift.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+  }
+
+
+.potion-bag {
+    margin-top: 10%;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    
+    
+}
+
+.button {
+    /* margin: 10px;
+    display: block;
+    color: white;
+    background-color: rgb(71, 71, 71);
+    font-size: 30px;
+    padding: 5px;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 100ms;
+    text-decoration: none; */
+    
+    background-color: #666;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 15px 2px;
+  
+}
+
+.button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

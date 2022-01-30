@@ -209,7 +209,7 @@ img {
 .view-potion {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-image: url("https://i.ibb.co/hmfvfZz/Potion-Bottle.png");
   background-size: contain;
@@ -238,6 +238,14 @@ img {
   
 }
 
+.please-center-bro {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .button {
   background-color: #666;
   font-size: 20px;
@@ -250,4 +258,5 @@ img {
 
 .button:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }

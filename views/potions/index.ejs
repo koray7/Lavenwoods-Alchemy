@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/potionsbag.css" rel="stylesheet">
+    <link href="/css/potions/potionsbag.css" rel="stylesheet">
     <title>Potion Bag</title>
 </head>
-<body>
+<body class='bag-body'>
+    <div class="potion-bag">
     <h1>Potion Bag</h1>
     <%if(potions.length) {%>
     <% for (let i=0; i<potions.length; i++) { %>
-        <ul>
-        <li><a href="/potions/<%= potions[i].id %> "><%= potions[i].potionName %> </a></li>
-        </ul>
+        
+        <a href="/potions/<%= potions[i].id %> "><button class="button"><%= potions[i].potionName %></button></a>
+        
    <% } %>
    <% } else { %>
     <em>Potion bag is empty.  Better talk to your favorite mage!</em>
   <% } %>
-
+</div>
   <div>
-      <button><a href="/mages">Summon Mages Again!</a></button>
+      <a href="/mages"><button class="button">Summon Mages Again!</button></a>
   </div>
 </body>
 </html>
