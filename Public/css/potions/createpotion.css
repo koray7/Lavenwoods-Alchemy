@@ -1,17 +1,67 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Nova+Cut&family=Snowburst+One&family=Zen+Kurenaido&display=swap');
 
 
-.magebody {
-    text-align: center;
+body {
+   
     background-image: url("https://www.dndspeak.com/wp-content/uploads/2021/06/Thrift.png");
     background-size: cover;
     background-repeat: no-repeat;
     
 }
+
+
+.mage-info{
+    text-align: center;
+    
+}
+
+
+
+.ingredients {
+    display: flex;
+    color:ivory;
+    text-align: left;
+    padding-left: 250px;
+    flex-direction: column;
+    filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
+    transition: 200ms;
+}
+
+
+.potion-bottle{
+    display: flex;
+    position: absolute; 
+    top: 400px;
+    left: 500px;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+ 
+   
+  
+}
+
+.mage {
+    display: none;
+}
+
+.mage-image{
+    display: flex;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    right: 90px;
+    top: 150px;
+
+
+}
+
 .bubbleText {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .bubble {
     margin-bottom: 30px;
     margin-left: 13%;
@@ -21,17 +71,24 @@
     background: linear-gradient(1deg, #945100 71%, #613500 100%);
     color: #ffe8e8;
     font-family: 'Zen Kurenaido', sans-serif;
-    font-size: 70px;
+    font-size: 20px;
     line-height: 45px;
     filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
     width: 1050px;
-    height: 140px;
+    height: 250px;
     border-radius: 60px;
     padding: 15px;
     border: #edd8d8 solid 11px;
     flex-direction: column;
 
+
 }
+.chatter{
+    line-height: 25px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 .bubble:after {
     content: '';
     position: absolute;
@@ -45,6 +102,7 @@
     left: 64%;
     margin-left: -26.5px;
 }
+
 .bubble:before {
     content: '';
     position: absolute;
@@ -58,72 +116,6 @@
     margin-left: -37.5px;
     display: block;
 }
-.magetext {
-    line-height: 30px;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-#brewyeBtn {
-
-  text-decoration: none;
-  color: aliceblue;
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: rgb(250, 249, 244);
-  background-color: #fac370;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px hsl(0, 77%, 74%);
-  margin-top: 1px;
-}
-#brewyeBtn:hover {background-color: #f1ede5}
-
-#backBtn {
-
-    text-decoration: none;
-    color: aliceblue;
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: rgb(250, 249, 244);
-    background-color: #fac370;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px hsl(0, 77%, 74%);
-    margin-top: 1px;
-  }
-  #backBtn:hover {background-color: #f1ede5}
-  
-  .magePic {
-    margin-top: 70px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    filter: drop-shadow(-8px 12px 9px rgba(219, 100, 100, 0.67));
-    transition: 200ms;
-}
- .magePic:hover {
-    transform: scale(1.1);
-  }
-
-.mage-name {
-    font-size: 40px;
-    color:rgb(49, 0, 0);
-    font-weight: bold;
-}
-
-
-
 
 
 

@@ -6,45 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="html/css" href="../../Styles/style.css">
-    <title>New Potion</title>
+    <title>Creating Potion</title>
+    <link href="/css/potions/createpotion.css" rel="stylesheet">
     <script defer src="/Script/script.js"></script>
 </head>
 
 <body onload="getQuote(), nameValue()">
     
     <div>
-        <img src="<%= mage.image %> ">
-        <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
+        <div class="bubble">
+            <h1 class="bubbleText"></h1>
+            
+            <div class="chatter">
+            <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
             day from me neighbor.</p>
-        <p id="mage-quote"></p>
-        <p>Did ye know that?</p>
-    </div>
-    <img src="https://i.ibb.co/hmfvfZz/Potion-Bottle.png" alt="Potion-Bottle" border="0">
-    <form action="/potions" method="POST">
-        <h2>Potion Name:</h2>
-        <input id="potion-name" type="text" name="potionName" placeholder="Potion Name Here" value=""></br></br>
-        <h2>Choose Your Ingredients:</h2>
-        <% for (let i=0; i< mage.ingredients.length; i++) { %>
-            <p>
-                <%= mage.ingredients[i].ingredientName %> <input type="checkbox" name="attributes"
-                        value="<%= mage.ingredients[i].effect %>" />
-            </p>
-            <%}%>
-                <input type="submit" value="Brew Your Potion!">
-                <legend>
-                    <label for="mage">
-                        Mage that created this potion:
-                        <select name="mage" id="mage">
-                            <option value="<%= mage._id %>">
-                                <%= mage.mageName %>
-                            </option>
-                        </select>
-
-
-
+            <p id="mage-quote"></p>
+            <p>Did ye know that?</p>
+        </div>
+        </div>
+            
+        <div class="ingredients">
+            <form action="/potions" method="POST">
+            <h2>Potion Name:</h2>
+            <input id="potion-name" type="text" name="potionName" placeholder="Potion Name Here" value=""></br></br>
+            <h2>Choose Your Ingredients:</h2>
+            <% for (let i=0; i< mage.ingredients.length; i++) { %>
+                <p>
+                    <%= mage.ingredients[i].ingredientName %> <input type="checkbox" name="attributes"
+                            value="<%= mage.ingredients[i].effect %>" />
+                </p>
+                <%}%>
+                    <input type="submit" value="Brew Your Potion!">
+                    <legend>
+                        <div class="mage">
+                        <label for="mage">
+                            Mage that created this potion:
+                            <select name="mage" id="mage">
+                                <option value="<%= mage._id %>">
+                                    <%= mage.mageName %>
+                                </option>
+                            </select>
                     </label>
-                </legend>
-    </form>
+            </div>
+            </legend>
+            </form>
+
+        </div>
+        <section class="container">
+
+            <div class="potion-bottle">
+                <img src="https://i.imgur.com/jHF4IAW.png" alt="Potion-Bottle" border="0">
+            </div>
+            <div class="mage-image">
+                <img src="<%=mage.image%>">
+            </div>
+
+        </section>
+        
+       
+            
+        
+    </div>    
+
+            
+
+
+  
 </body>
 
 </html>
