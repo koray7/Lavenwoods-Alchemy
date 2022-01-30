@@ -10,10 +10,10 @@
     <script defer src="/Script/script.js"></script>
 </head>
 
-<body onload="getQuote()">
-    <h1>New Potion</h1>
+<body onload="getQuote(), nameValue()">
+    
     <div>
-        <h1>I am <%= mage.mageName %>! </h1>
+        <img src="<%= mage.image %> ">
         <p>I can whip that up for ye in a matter o' hours! Let's get started. Ye know I heard a curious thing the other
             day from me neighbor.</p>
         <p id="mage-quote"></p>
@@ -22,21 +22,28 @@
     <img src="https://i.ibb.co/hmfvfZz/Potion-Bottle.png" alt="Potion-Bottle" border="0">
     <form action="/potions" method="POST">
         <h2>Potion Name:</h2>
-        <input type="text" name="potionName" placeholder="Potion Name Here"></br></br>
-        <h2>Potion Effects:</h2>
-        <textarea name="attributes" id="" cols="30" rows="10"></textarea></br>
-        <input type="submit" value="Brew Your Potion!">
-        <legend>
-            <label for="mage">
-                Mage that created this potion:
-                <select name="mage" id="mage">
-                    <option value="<%= mage._id %>"><%= mage.mageName %></option>
-                </select>
-                 
-                 
-                
-            </label>
-        </legend>
+        <input id="potion-name" type="text" name="potionName" placeholder="Potion Name Here" value=""></br></br>
+        <h2>Choose Your Ingredients:</h2>
+        <% for (let i=0; i< mage.ingredients.length; i++) { %>
+            <p>
+                <%= mage.ingredients[i].ingredientName %> <input type="checkbox" name="attributes"
+                        value="<%= mage.ingredients[i].effect %>" />
+            </p>
+            <%}%>
+                <input type="submit" value="Brew Your Potion!">
+                <legend>
+                    <label for="mage">
+                        Mage that created this potion:
+                        <select name="mage" id="mage">
+                            <option value="<%= mage._id %>">
+                                <%= mage.mageName %>
+                            </option>
+                        </select>
+
+
+
+                    </label>
+                </legend>
     </form>
 </body>
 

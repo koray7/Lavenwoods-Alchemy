@@ -9,7 +9,6 @@ const potionSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Mage'
     }
-    // type of mage/element string 
 }, {timestamps: true})
 
 const Potion = mongoose.model("Potion", potionSchema)
