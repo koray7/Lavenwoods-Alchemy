@@ -38,15 +38,8 @@
   font-size: 50px;
   padding: 30px;
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: rgb(250, 249, 244);
-  background-color: #e6bd07;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  /* color: rgb(59, 36, 1);
-  text-shadow: 2px 3px 1px rgb(173, 151, 114); */
+  color: rgb(59, 36, 1);
+  text-shadow: 2px 3px 1px rgb(173, 151, 114);
 }
 
 .summon {
