@@ -21,6 +21,11 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 ### Welcome page
 ![Screen Shot 2022-01-31 at 9 02 30 AM](https://user-images.githubusercontent.com/95322104/151818026-d980280a-e3b2-4a86-ab65-5895f9802519.png)
 
+### Mages Page
+![Screen Shot 2022-01-31 at 9 03 33 AM](https://user-images.githubusercontent.com/95322104/151818402-d719c89b-5bb8-4b36-bd5c-35113b87df8d.png)
+
+
+
 
 
 ## User stories
