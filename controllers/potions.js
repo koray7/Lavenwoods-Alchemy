@@ -34,7 +34,13 @@ router.get('/:id', (req, res) => {
 
 //edit
 router.get('/:id/edit', (req, res) => {
-    res.send(`Edit route for ${req.params.id}`)
+    Potion.findById(req.params.id, (err, potionToEdit) => {
+        if (err){
+            res.send(err);
+        } else {
+            res.render('potions/edit.ejs', { potion: potionToEdit})
+        }
+    })
 })
 
 //create
@@ -62,7 +68,13 @@ router.delete('/:id', (req, res) => {
 //update
 
 router.put('/:id', (req, res) => {
-    res.send(`Potion update: ${req.params.id}`)
+    Potion.findByIdAndUpdate(req.params.id, req.body, {new: true }, (err, updatePotion) => {
+        if (err){
+            res.send(err)
+        } else {
+            res.redirect('/potions')
+        }
+    })
 })
 
 module.exports = router

@@ -135,3 +135,24 @@ body {
   margin-top: 1px;
 }
 
+.edit-potion {
+    color: white;
+    padding: 20px;
+    width: 550px;
+    background-color: rgba(0, 0, 0, 0.712);
+    border: 3px solid black;
+    border-radius: 15px;
+    
+}
+
+.boxy-thing {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole-container {
+    background-color: black;
+    width: 500px;
+}

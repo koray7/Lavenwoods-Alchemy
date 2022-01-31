@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Potion</title>
+    <link href="/css/potions/createpotion.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Edit Potion Page</h1>
+    <div class="boxy-thing">
+        <div class="edit-potion">
+            <h1>Edit Potion Page</h1>
+            <form action="/potions/<%=potion._id%>?_method=PUT" method="POST">
+                <legend>
+                    <label for="potionName">
+                        Rename Your Potion: <br />
+                        <input id="potion-name" type="text" name="potionName" value="<%=potion.potionName%>" required
+                            placeholder="Enter Potion Name">
+
+
+                    </label>
+                    <br /><br />
+                </legend>
+                <legend>
+                    <label for="attributes">
+                        Add Additional Attributes: <br />
+                        <textarea rows="6" cols="60" id="attributes" name="attributes"><%=potion.attributes%></textarea>
+                </legend>
+                <input class="make-potion-now" type="submit" value="Add Ingredients">
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
