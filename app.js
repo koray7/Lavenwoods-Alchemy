@@ -17,7 +17,7 @@ const URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/potions"
 mongoose.connect(URI, () => console.log(`Mongoose connected at ${URI}`))
 
 //STATIC (JS, CSS)
-app.use(express.static('public'))
+app.use(express.static(__dirname + 'public'))
 
 //MIDDLEWARE
 app.use(methodOverride('_method'))
