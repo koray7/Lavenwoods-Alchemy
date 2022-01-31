@@ -18,19 +18,22 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 
 ## Updated Wireframe
 
-### Welcome page
+
 ![Screen Shot 2022-01-31 at 9 02 30 AM](https://user-images.githubusercontent.com/95322104/151818026-d980280a-e3b2-4a86-ab65-5895f9802519.png)
 
-### Mages Page
+
 ![Screen Shot 2022-01-31 at 9 03 33 AM](https://user-images.githubusercontent.com/95322104/151818402-d719c89b-5bb8-4b36-bd5c-35113b87df8d.png)
 
-### Ye 1 Mage Show Page
+
 
 ![Screen Shot 2022-01-31 at 9 04 40 AM](https://user-images.githubusercontent.com/95322104/151818791-4907b0ab-e63f-42a6-9d52-505ac147cb81.png)
 
-### Create Page 
+
 
 ![Screen Shot 2022-01-31 at 9 05 03 AM](https://user-images.githubusercontent.com/95322104/151819153-e68285a0-e035-4680-8bfd-a5088d59bb18.png)
+
+
+![Screen Shot 2022-01-31 at 9 05 19 AM](https://user-images.githubusercontent.com/95322104/151819453-c7d00ddd-4792-4114-a5d7-173c611e1fa6.png)
 
 ## User stories
 As a user, I want to enter Lavenwoods and find out what’s Lavenwoods is about!
