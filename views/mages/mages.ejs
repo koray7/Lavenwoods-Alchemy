@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/mages/mage.css" rel="stylesheet">
+    <link href="/mage.css" rel="stylesheet">
     <title>Ye' Mages!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="/script/script.js"></script>
+    <script defer src="/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
 </head>
@@ -16,22 +16,22 @@
 <body class="mage-body">
 
     <% for (let i=0; i<mage.length; i++){ %>
-            
+
+        <div class="mage-flex">
+            <div class="individual-mage">
+
                 <div class="mage-flex">
                     <div class="individual-mage">
 
-            <div class="mage-flex">
-                <div class="individual-mage">
+                        <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" class="mage-image"
+                                alt="Enigma-Mage" border="0"></a>
 
-                    <a href="/mages/<%= mage[i].id %>"><img src="<%= mage[i].image%>" class="mage-image"
-                            alt="Enigma-Mage" border="0"></a>
-
-                    <h2>
-                        <%= mage[i].mageName %>
-                    </h2>
+                        <h2>
+                            <%= mage[i].mageName %>
+                        </h2>
+                    </div>
+                    <% } %>
                 </div>
-                <% } %>
-            </div>
 
 </body>
 
