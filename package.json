@@ -4,7 +4,8 @@
   "description": "## App name: Lavenwoods Alchemy Short app description User chooses between 4 mages of an element class.  The mage they choose will craft them a potion based on their element, and the user will be able to define the effects of their potion. Once the potion is created, it will be added to their potion bag.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js"
   },
   "repository": {
     "type": "git",
