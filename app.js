@@ -1,7 +1,7 @@
 //DEPENDENCIES
 const express = require("express")
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 const methodOverride = require('method-override')
 const Potion = require("./models/Potion")
 const Mage = require("./models/Mage")
@@ -13,7 +13,7 @@ app.set('view engine', 'ejs')
 
 //MONGOOSE
 const mongoose = require('mongoose')
-const URI = "mongodb://127.0.0.1:27017/potions"
+const URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/potions"
 mongoose.connect(URI, () => console.log(`Mongoose connected at ${URI}`))
 
 //STATIC (JS, CSS)
