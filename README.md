@@ -35,6 +35,12 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 
 ![Screen Shot 2022-01-31 at 9 05 19 AM](https://user-images.githubusercontent.com/95322104/151819453-c7d00ddd-4792-4114-a5d7-173c611e1fa6.png)
 
+
+![Screen Shot 2022-01-31 at 9 05 32 AM](https://user-images.githubusercontent.com/95322104/151820301-0ced4254-3578-4cc9-9a6b-6188946f03b7.png)
+
+
+
+
 ## User stories
 As a user, I want to enter Lavenwoods and find out what’s Lavenwoods is about!
 As a user, I want to see the shop available in Lavenwoods.
