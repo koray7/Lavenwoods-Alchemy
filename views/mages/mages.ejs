@@ -17,7 +17,7 @@
                 <h2>
                     <%= mage[i].mageName %>
                 </h2>
-                <a href="urmom.com"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
+                <a href="/potions/new"><img src="<%= mage[i].image%>" alt="Enigma-Mage" border="0"></a>
                 <!-- <input type="submit" name="<%= mage[i].element %>" value="<%= mage[i].element %>"> -->
                 <form action="/mages/<%= mage[i].id %>?_method=DELETE" method="POST">
                     <button type="submit">Delete ye mage?</button>

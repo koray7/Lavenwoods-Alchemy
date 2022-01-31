@@ -43,11 +43,60 @@ router.get('/', (req, res) => {
     })
 })
 
-//New
-// router.get('/new', (req, res) => {
-//     // res.send('New Potion Route')
-//     // res.render('new.ejs')
-//     res.render('potions/new.ejs')
+//seed
+// router.get('/seed', (req, res) => {
+//     Mage.deleteMany([
+//         Mage_O_Flame= {
+//         type: "Mage",
+//         element: "Flame",
+//         quote: "LA FLAMEEEEEE",
+//         image: 'https://i.ibb.co/64LzfMQ/Flame-Mage.png'
+//         },
+//         Mage_O_Bolt= {
+//             type: "Mage",
+//             element: "Bolt",
+//             quote: "Shock me like an electric eel",
+//             image: 'https://i.ibb.co/64LzfMQ/Bolt-Mage.png'
+//             },
+//             Mage_O_Frost= {
+//                 type: "Mage",
+//                 element: "Frost",
+//                 quote: "Ice ice baby~",
+//                 image: 'https://i.ibb.co/64LzfMQ/Frost-Mage.png'
+//                 },
+//                 Mage_O_Flame= {
+//                     type: "Mage",
+//                     element: "Mystery",
+//                     quote: "Who wants wizard powers!?",
+//                     image: 'https://i.ibb.co/64LzfMQ/Enigma-Mage.png'
+//                     }
+//     ]),
+    // Mage.insertMany([
+    //     Mage_O_Flame= {
+    //     type: "Mage",
+    //     element: "Flame",
+    //     quote: "LA FLAMEEEEEE",
+    //     image: 'https://i.ibb.co/64LzfMQ/Flame-Mage.png'
+    //     },
+    //     Mage_O_Bolt= {
+    //         type: "Mage",
+    //         element: "Bolt",
+    //         quote: "Shock me like an electric eel",
+    //         image: 'https://i.ibb.co/64LzfMQ/Bolt-Mage.png'
+    //         },
+    //         Mage_O_Frost= {
+    //             type: "Mage",
+    //             element: "Frost",
+    //             quote: "Ice ice baby~",
+    //             image: 'https://i.ibb.co/64LzfMQ/Frost-Mage.png'
+    //             },
+    //             Mage_O_Flame= {
+    //                 type: "Mage",
+    //                 element: "Mystery",
+    //                 quote: "Who wants wizard powers!?",
+    //                 image: 'https://i.ibb.co/64LzfMQ/Enigma-Mage.png'
+    //                 }
+    // ])
 // })
 
 //show

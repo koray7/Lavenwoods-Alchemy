@@ -1,6 +1,22 @@
-body {
+@font-face {
+    font-family: 'old_londonregular';
+    src: url('olondon_-webfont.woff2') format('woff2'),
+         url('olondon_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background-image: url("https://i.ibb.co/GVmPjZN/Wood-Background.png");
+    background-size: 50%;
+}
+
+h1, form {
+    font-family: 'old_londonregular';
+    color: white;
+    font-size: 120px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
