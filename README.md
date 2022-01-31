@@ -40,6 +40,7 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 
 
 
+![Screen Shot 2022-01-31 at 9 16 35 AM](https://user-images.githubusercontent.com/95322104/151820508-e2bdc7d3-0142-402f-8410-5261e595f07b.png)
 
 ## User stories
 As a user, I want to enter Lavenwoods and find out what’s Lavenwoods is about!
