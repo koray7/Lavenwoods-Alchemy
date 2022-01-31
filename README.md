@@ -1,9 +1,10 @@
 # Lavenwoods-Alchemy
 
 ## App name: Lavenwoods Alchemy
-Short app description
 User chooses between 4 mages of an element class.  The mage they choose will craft them a potion based on their element, and the user will be able to define the effects of their potion. Once the potion is created, it will be added to their potion bag.
 
+
+ ### Welcome to Lavenwoods Alchemy! If you're in search of a potion brewery, you've choosen the right shop! Within our shop, you can summon four mages, possessing different elemental sorcery! You can choose a mage, learn a little bit about them, and then brew a potion with their element! You can choose your potion name, the effects the potion contain, and then your favorite mage will synthesize your brew! You will be able to find your brew within your potion bag; you can drink your potion, edit your potion attributes, or dump it out! The possibilities of your potions are endless! Enjoy Lavenwoods Alchemy!
 
 ## Basic low-fidelity wireframes
 
@@ -43,23 +44,18 @@ User chooses between 4 mages of an element class.  The mage they choose will cra
 ![Screen Shot 2022-01-31 at 9 16 35 AM](https://user-images.githubusercontent.com/95322104/151820508-e2bdc7d3-0142-402f-8410-5261e595f07b.png)
 
 ## User stories
-As a user, I want to enter Lavenwoods and find out what’s Lavenwoods is about!
-As a user, I want to see the shop available in Lavenwoods.
-As a user, I want to see what the shop has to offer.
-  3.a. As a user, I want to see the categories of products
-  3.b. As a user, I want to see the properties of products
-  3.c. As a user, I want to be able to request a product
-4. As a user, I want to know my product request has been received
-5. As a user, I want to leave the shop with a product
-6. As a user, I want to be able to reenter the shop
-12:05
+  As a user, I want to find Lavenwoods Alchemy and enter the shop
+  As a user, I want to be able to summon mages to help me brew my potion. 
+  As a user, I want to be able to name my potion and create effects.
+  As a user, I want to see my potion once its done.
+  As a user, I want to be able to make another potion once I am done making one potion.
 
 
 ## Stretch Goals
-I want to be able to see the mage’s specialities
-I want to be able to create my own potion from stratch
-I want to be able to visit our parts of Lavenwoods
-I want to be able to view my inventory throughout my transactions
+  I want a place where I can view the potions I've made.
+  I want to be able to use different ingredients for my potion.
+  I want to be able to create a potion from scratch without the help of a mage.
+  I want to be able to combine elements.
 
 
 ## MVP goals list
@@ -79,9 +75,7 @@ Water
 Air
 TextArea for custom potion effects
 “Create Potion” button
-
 Potion index page with list of potions you created
-
 Click on potion to “show” potion name and effects.
 Back to main page button
 
